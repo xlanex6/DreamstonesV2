@@ -1,0 +1,10 @@
+fr:
+  baseline: "Le futur de DREAMSTONES"
+  baseline_p: "commence ici"
+
+  pre_modal_text: "The way we supply our client, design and build houses for them,  is not compatible with every project. <br>
+    It’s works on conditions..."
+  pre_modal_btn: "Mon projet est il compatible ?"
+
+  modal_form_content: "mon para de modal"
+  modal_form_btn: "Envoyer moi une invitation"

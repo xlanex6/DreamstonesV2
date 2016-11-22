@@ -1,23 +1,230 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+
+## home ##
+  baseline: DREAMSTONES
+  baseline_p: Architects, engineers & trusted builders for your home in France
+  baseline_cta: See how we can help your project
+
+  home_new_build: NEW BUILD
+  home_renovation: RENOVATION
+  home_extension: EXTENSION
+
+
+  home_h3: About DREAMSTONES
+  home_p1: Dreamstones is a leading design and build company for international clients looking to build or renovate overseas.
+  home_p2: The team combines multilingual architects, engineers and a large network of trusted builders in order to provide a complete solution for international clients wishing to build or renovate their bespoke home abroad. Highly qualified and experienced, the team has been involved in numerous projects across Europe, ranging from modern new build homes to major renovations.
+  home_p3: Bespoke home building projects need a multi-disciplinary team, involved every step of the way, to ensure completion on time, on budget and according to quality standards. This has been confirmed so far by the numerous clients who have worked hand in hand with Dreamstones. By following the step by step process they made their dream home project abroad come true.
+  home_p4: Get in touch in order to see if your project qualifies for Dreamstones' design and build process.
+
+
+  home_feature_title1: QUALITY
+  home_feature_p1: >
+                    Standards and regulations compliant </br>
+                    All building works guaranteed
+  home_feature_title2: SIMPLICITY
+  home_feature_p2: >
+                    Multilingual single point of contact </br>
+                    Support 7 days a week
+  home_feature_title3: COST
+  home_feature_p3: >
+                  Local market price </br>
+                  Always on budget
+  home_feature_title4: TRUST
+  home_feature_p4: >
+                  100+ customers satisfied </br>
+                  UK-registered company
+
+
+## nav bar ##
+
+  home: Home
+  process: Process
+  testimonial: Testimonial
+  team: Team
+
+
+## media_partners ##
+
+  media_partners: In association with
+
+## pre_modal ##
+  pre_modal_text: Get in touch in order to see if your project qualifies for DREAMSTONES' design and build process.
+  pre_modal_btn: Get this process for my project!
+
+  modal_form_h: Ask if we can help
+  modal_form_content: Not all building projects need to follow our process. Some projects are too simple for our process to be beneficial, some others must follow our process to avoid any difficulties and increased costs.
+                      Check if your project is compatible now!
+  modal_form_btn: Is my project compatible ?
+
+## simply process
+  simple_pro_h3: Building process simplified
+
+
+
+## full process ##
+
+  process_page_title: test de processsssssss
+  process_page_h1: Our unique process
+
+  preparation: PREPARATION
+  design: DESIGN
+  build: BUILD
+
+
+## preparation ##
+
+
+  process_title1: Initial project discussion
+  process_content1: A successful house project starts with a good brief and a vision. This first discussion either made in person and through a video call is essential to understand the project in all its aspects as well as the expectations from its owners. Communication is key from the earliest possible stage in order to achieve your dream home.
+
+  process_title2: Document compilation
+  process_content2: In order to consider the project as a whole, it is also important to gather all the information (photos, cadastral plans, copy of local planning regulations, design inspirations, etc.). This, to identify the missing pieces of information that will be needed to progress.
+
+  process_title3: Survey
+  process_content3: Either for a new build, a renovation project or even for an extension, a site survey is mandatory in order to assess the existing and evaluate the future scope of work. It must consider all aspects of the plot/property (dimensions, condition, etc.).
+
+  process_title4: Gross estimate
+  process_content4: Unless money is no matter, the reliable gross estimate will allow you to have a clearer understanding of the scope of work and the financial implications that go with it. This often enables the owners of a project to re-evaluate the project and the parts in which they wish to invest money or not. As a result, many are also able to plan their finances in order to have the necessary liquidity for the build phase.
+
+  process_title5: Project feasibility assessment
+  process_content5: This is where the sensible evaluation of the project characteristics takes place assessing the results of the survey and the gross estimate. Other important factors are taken into account including the local authorities recommendation for planning approval as well as the desired timeline for the project to be completed. When all boxes are ticked it is time to move onto the design phase.
+
+
+
+
+
+
+
+
+
+## design ##
+
+
+  process_title7: Design contract
+  process_content7: Designing your dream home in details is not a simple task and every efforts must be applied to turn your ideas into plans. This very essential phase of your project come under one simple contract including all the necessary architectural plans and technical studies until obtention of the planning permission. This to bring you piece of mind until the build phase.
+
+  process_title8: Specifications listing
+  process_content8: In order to ensure that your house will include all the necessary space, equipment and features to accommodate your taste and needs, the design of your house must start by a detailed listing of all specifications. A document lists it all and is ready for you to fill either on your own and with the help of our team so that nothing is missed.
+
+  process_title9: Draft layout plans
+  process_content9: As a house is first of all a combination of spaces, the draft layout plans is the puzzle game where the different options are identified. The excitement rises as decisions are being made. Most uncertainties disappear as you can start to imagine the logical link between all rooms.
+
+  process_title10: Sketch of concept building
+  process_content10: Although it is very tempting to start drawing prior to this stage and sometimes beneficial to get inspirations, this is the stage where the magic starts to take place and the house internal but also external shapes are designed. The look is therefore more concrete and changes can also be applied in order to achieve the desired style.
+
+  process_title11: Planning pre-approval
+  process_content11: Planning can be complicated when the project is not developed in accordance to the local regulations. This is why they must be considered from the preparation phase. Whilst the house has been designed in consideration with the planning rules, submission of the concept building for pre-approval is a must. It allows to progress efficiently to the architectural drawings with the piece of mind resulting from the positive feedback of local authorities. If any changes are required, it is the best time to do so so that no time is wasted and no additional delays are occurred.
+
+  process_title12: 3D modelling
+  process_content12: Drawings are essential to the design phase but the most up-to-date technology can now allow to get a very realistic impression of your house. An accurate 3D model of your house at scale is therefore created for you to have a very clear idea of what it is going to look like and which materials would go well together. It’s like being in a video game of your own house and even the trades like to see it during the build phase to complete the work in perfect accordance to the model.
+
+  process_title13: Architectural plans
+  process_content13: Once the proposed project has received a satisfactory feedback from the planning authorities and all details have been decided on the 3D, the architectural plans can now be drawn up. This includes the master plan, the layouts, the elevations and the sections, at scale and with all the necessary dimensions and details.
+
+  process_title14: Technical studies
+  process_content14: In order to apply for planning permission, a few mandatory technical studies must be carried out starting with the soil study. A soil engineer will collect sample on site in specific locations on the plot. The soil resistance and its permeability are two major components that will be highlighted in his report. The will allow for the waste water treatment study to be carried out and for the mandatory certificate to be delivered. Follows the thermal study for new builds and extensions as thermal efficiency regulations also require for the building/extension to comply with the standards so that the certificate can be delivered. These two certificates must be included in the planning application to gain approval.
+
+  process_title15: Planning application
+  process_content15: Architectural plans, project brief, 3D images, certificates are all compiled in one file and attached to the application which will then be sent to the local authorities by post for approval. Depending on the project the approval process can take up to 3 months. This is the start of the build phase!
+
+
+## build ##
+
+
+  process_title16: Detailed quotation
+  process_content16: While the project sits with local authorities and is under review, all the construction tasks and quantities can now be listed and the quotation can be produced. Trades from our network are invited to bid  as well as a few local ones, meticulously selected according to their level of competencies, company financial health, past references and availability. Unless specified, standard equipment are included. The detailed quotation will include all elements of the build with no exception so that there is no surprise. All jobs are also detailed and translated into english for your ease.
+
+  process_title17: Planning approval
+  process_content17:
+
+  process_title18: Site board installation
+  process_content18: Once the planning permission is obtained, the site board is installed.
+
+  process_title19: Building contract signature
+  process_content19: A detailed quote is not enough and a building project represents important financial implications. Therefore you must be protected through the appropriate building contract including the schedule of work and the schedule of payment. We carry the risk of the build for our clients and building works are therefore invoiced by Dreamstones so that your money is protected. Dreamstones contracts with all trades so that nothing can go wrong. Therefore, in order to book all trades and start ordering the necessary materials, the contract should be signed early enough so that no additional delays are occurred.
+
+  process_title20: Blueprints
+  process_content20: Our engineers will then work on the blueprints of your project which will allow them to give clear instructions to the specialist trades. This includes the structural plans, plumbing plans, ventilations plans and electric plans. All of which are included within the build contract at no extra cost to avoid all assumptions and mistakes.
+
+  process_title21: Material & equipment selection
+  process_content21: Although already decided items and standard equipment are included within the detailed quotation, you can now decide once and for all on material and equipment. This process allows you to not delay the project while having more time to think and agree with your partner on the finishes. This, based on your tastes but also on the financial margin you have at that stage of the project to invest more money in the details that matter to you.
+
+  process_title22: Price revision
+  process_content22: As the materials and equipments are decided the detailed quotation is edited to include the price revision. Once you’re happy with everything the building works can begin.
+
+  process_title23: Site preparation
+  process_content23: The health and safety plan and the waste management plan are set. The building warrant is obtained. Your site is also covered by our insurance for the entire build phase.
+
+  process_title24: Site opening
+  process_content24: >
+                    On-site marking is in place.The site access is built. The skip is ordered. </br> Now, the work can begin!
+
+  process_title25: Building works
+  process_content25: All trades get the final version of the blueprints with clear instructions on how and when to proceed for their part of the work. All other plans must be deleted. The building works start with a first site meeting organised by the site manager where all trades are introduced to each other. The site manager ensures the good communication with all trades and the building site is managed with a focus on quality, time but also safety. You are constantly kept informed of the progress and communication with all stakeholders thanks to regular progress reports and site pictures. You can sit back and see the magic happen as your house is getting built.
+
+  process_title26: Snagging resolution
+  process_content26: All projects have details at the end which need to be addressed and solved so that your house is in tip top condition for you to move in. Our team ensures that all of them are fixed for the the last payment to be released. This way you stay in complete control of the end result. All certificates of compliancy are also obtained and the local authorities are notified of the site completion.
+
+  process_title27: Key handling
+  process_content27: The site is cleaned, utilities set up and property tax are organised on your behalf for your ease. Building works are guaranteed 10 years so no need to worry about costly unforeseen expenditure. If any problem arises out-with the warranty, our support team is also here for you and will react promptly to find the best solution.
+
+  process_title28: Furnishing
+  process_content28: Unless you have this sorted already, our team can assist you with moving in your furniture or ordering and installing new one. All you have to do is decide on what you want and enjoy your new French house with your family and friends.
+
+## team ##
+
+  team_title: The Dream team
+  team_p1: Samuel CASTELLO and Quentin KAISER are the proud founders of DREAMSTONES. Being both highly qualified and experienced from the home building industry, they noticed the difficulties friends and family members were facing in their construction project especially when dealing with several stakeholders (architects, engineers, local authorities, trades, etc.) and decided to solve this problem by creating DREAMSTONES in 2012 to offer a full service to design & build a bespoke home in Europe.
+  team_p2: With the financial, time and stress implications that a building project can bring with it, we feel personally very involved and committed to help our clients with all aspects of the design & build and not just a part of it. So many people hesitate and are unsure about the best way to go about their house project. As a building project comprises a lot of aspects, not approaching it as a whole always end up in compromises and time wasting. We wanted to solve this problem by providing a single point of contact for a design & build project and created Dreamstones to include all specialities and trades. This way we could ensure the best communication of important information along the project and save the cost of having a lot of different stakeholders on a individual basis, which is what everybody was looking for. More and more people are now following the process we have developped and are satisified with both the ease and the end result. Our whole team work very hard to make this possible but the reward of creating our clients dream home is immense and not one is the same. Samuel CASTELLO
+
+  team_feature1:
+  team_feature2:
+  team_feature3:
+  team_feature4:
+
+      ##members##
+
+  base_ama: Always on time, always on budget!
+  base_mat: Always on time, always on budget!
+  base_sam: Grow or die
+  base_afaf: From ideas to plans
+  base_quen: The pillar of all projects
+  base_nicky: Supporting like a prop
+
+  job_amadou: Structural engineer
+  job_mathieu: Structural engineer
+  job_sam: Construction engineer
+  job_afaf: Architect
+  job_quentin: Architect
+  job_nicky: Mechanical engineer
+  job_laura:  Sociologist
+  job_alex: Web Developper
+  job_antonis: Architect
+  job_fahad: Management
+
+  departement_amadou: Build
+  departement_mathieu: Build
+  departement_sam: Process
+  departement_afaf: Design
+  departement_quentin: Process
+  departement_nicky: Care
+  departement_laura: Care
+  departement_alex: IT
+  departement_antonis: Design
+  departement_fahad: Subcontractors management
+
+  house_description_amadou: Eco-house with views on the sea front
+  house_description_mathieu: Modern eco-house in the forest
+  house_description_sam: Modern villa in the south of France
+  house_description_afaf: Modern villa near the sea
+  house_description_quentin: Eco house with views over the ocean
+  house_description_nicky: Renovated chalet in the Alps
+  house_description_laura:
+  house_description_alex: Modern chalet in the Alps
+  house_description_antonis: Traditional villa by the sea
+  house_description_fahad:
+
+
+####### project  ##################
+
+  project_page_h1:
