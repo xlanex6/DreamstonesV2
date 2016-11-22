@@ -2,3 +2,54 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+ .home-features{
+   background-color: $grey-dark;
+ }
+ .home-feature {
+   padding-top: 10px;
+   padding-bottom: 15px;
+   h3 {
+     color: $brand-color;
+     font-weight: bolder;
+     letter-spacing: 0.62px;
+
+   }
+   p {
+     color: $grey-light;
+
+   }
+   .icon {
+     height: 60px;
+   }
+ }
+
+
+ .home-icon h3 {
+   font-family: Montserrat-Bold;
+   font-size: 30px;
+   color: #F5A623;
+   letter-spacing: 1.25px;
+ }
+
+ .home-icons {
+   height: 260px;
+   background-color: $grey-dark;
+ }
+
+ .home-icon {
+   position: relative;
+   top: -50px;
+ }
+
+ .wrapper-dark-home {
+   background-color: $grey-dark;
+   height: 100px;
+
+ }
+
+ .france {
+   top: -70px;
+   position: relative;
+   height: 100px;
+ }

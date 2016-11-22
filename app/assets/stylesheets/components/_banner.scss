@@ -1,0 +1,32 @@
+.banner {
+  display: flex;
+  background-color: rgba(21, 22, 20, 0.66);
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  h1 {
+    font-family: Montserrat-Bold;
+    font-size: 48px;
+    color: $brand-color;
+    letter-spacing: 5.0px;
+  }
+  p {
+    padding-bottom: 30px;
+    font-family: OpenSans-CondensedLight;
+    font-size: 36px;
+    color: #FFFFFF;
+    }
+}
+
+.banner-commun {
+  height: 300px;
+  margin-bottom: 20px;
+}
+.banner-home {
+  height: 60vh;
+}
+
+.banner-process {
+  height: 300px;
+}

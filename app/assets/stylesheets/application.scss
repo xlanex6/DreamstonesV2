@@ -13,3 +13,15 @@
 @import "components/index";
 @import "pages/index";
 @import "vendor/index";
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #4A4A4A;
+}
+
+.wrapper-dark {
+  background-color: $grey-dark;
+}

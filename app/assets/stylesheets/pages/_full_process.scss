@@ -1,0 +1,93 @@
+.full-process {
+  position: relative;
+  width: 100%;
+}
+
+.process-menu {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-line {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 12px;
+
+}
+
+@media (max-width: $screen-sm-min) {
+  .time-line {
+    display: none;
+  }
+  .right-dot {
+    display: none;
+  }
+  .left-dot {
+    display: none;
+  }
+  .process-menu {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .mobile-padded {
+    display: none;
+  }
+}
+
+
+
+
+
+
+.proces-step-content {
+  text-align: center;
+  position: relative;
+  p {
+    font-weight: lighter;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  h3 {
+    font-family: Montserrat-Regular;
+    font-size: 30px;
+    color: #4A4A4A;
+    letter-spacing: 3px;
+  }
+
+}
+
+.right-dot {
+  position: absolute;
+  top: 40px;
+  left: -32px;
+}
+.left-dot {
+  position: absolute;
+  top: 40px;
+  right: -20px;
+}
+
+.mobile-padded {
+  padding-bottom: 8px;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-bottom: 1px solid grey;
+}
+
+.proces-step-graphics {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  h3 {
+    font-family: Roboto-Bold;
+    font-size: 35px;
+    color: #4A4A4A;
+    letter-spacing: 5.25px;
+  }
+
+}

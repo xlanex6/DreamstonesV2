@@ -1,7 +1,7 @@
 /* Main class */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
+  background: $grey-dark;
   transition: all 0.3s ease;
   display: flex;
   height: 70px;
@@ -20,8 +20,22 @@
 }
 
 /* Navbar logo */
-.navbar-wagon-brand img {
-  width: 50px;
+.logo {
+  text-transform: uppercase;
+  text-decoration: none;
+  h3 {
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    margin-left: 25px;
+  }
+  img {
+  height: 50px;
+  }
+  :hover {
+    text-decoration: none;
+  }
 }
 
 /* Navbar right section (with form, links, button) */
@@ -29,6 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 200px;
 }
 
 /* Navbar item */
@@ -40,11 +55,11 @@
 
 /* Navbar standard link */
 .navbar-wagon-link {
-  color: #616668;
+  color: $grey-light;
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
+  color: $brand-color;
   text-decoration: none;
 }
 
@@ -54,15 +69,14 @@
   padding: 0 20px;
   border-radius: 20em;
   line-height: 40px;
-  background-color: #D23333;
-  color: white;
+  background-color: $brand-color;
+  color: $grey-dark;
   font-size: 14px;
-  border: 2px solid #D23333;
+  border: 2px solid rgb(210, 139, 56);
 }
 .navbar-wagon-button:hover {
-  color: white;
-  background: #D23333;
-  border-color: #ac2626;
+  color: $grey-light;
+
 }
 
 /* Navbar search form */
