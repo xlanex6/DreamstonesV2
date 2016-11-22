@@ -68,7 +68,7 @@ Look at your main `application.scss` file to see how SCSS files are imported.
 @import "vendor/index";
 ```
 
-For every folder (**`components`**, **`layout`**, **`pages`**, **`vendor`**), there is one `_index.scss` partial which is responsible for importing all the other partials of its folder.
+For every folder (**`components`**, **`layout`**, **`pages`**, **`vendor`**), there is one `_index.scss` render which is responsible for importing all the other renders of its folder.
 
 **Example 1**: Let's say you add a new `_contact.scss` file in **`pages`** then modify `pages/_index.scss` as:
 
