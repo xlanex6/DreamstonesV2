@@ -1,0 +1,466 @@
+---
+  title: Dreamstones unique process
+---
+<div class="banner banner-process" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url('images/process-bg.png');">
+  <div class="banner-content">
+    <h1><%= t(:process_page_h1) %></h1>
+  </div>
+</div>
+
+<div class="wrapper-dark">
+  <div class="container">
+    <div class="row">
+      <div class="process-menu">
+        <%= image_tag 'images/process/process-user.png' %>
+          <% link_to "#prep" , class:"js-scrollTo" do %>
+            <%= image_tag 'images/process/process-prep.png' %>
+          <% end %>
+          <% link_to "#design" , class:"js-scrollTo" do %>
+            <%= image_tag 'images/process/process-design.png' %>
+          <% end %>
+          <% link_to "#build" , class:"js-scrollTo" do %>
+            <%= image_tag 'images/process/process-build.png' %>
+          <% end %>
+        <%= image_tag 'images/process/process-home.png' %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="full-process">
+    <div class="time-line"><%= image_tag "full-line.png" %></div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+          <h3> <%= t(:preparation) %> </h3>
+          <%= image_tag "prepa1.png" %>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title1) %></h3>
+          <p><%= t(:process_content1) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title2) %></h3>
+          <p><%= t(:process_content2) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+          <!-- <h3> <%= t(:preparation) %> </h3> -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title3) %></h3>
+          <p><%= t(:process_content3) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics" id="prep">
+          <%= image_tag "prepa2.png" %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title4) %></h3>
+          <p><%= t(:process_content4) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= partial 'contactform1' %>
+<div class="container">
+  <div class="full-process">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title5) %></h3>
+          <p><%= t(:process_content5) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+          <%= image_tag "prepa3.png" %>
+          <!-- <h3> <%= t(:preparation) %> </h3> -->
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title6) %></h3>
+          <p><%= t(:process_content6) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title7) %></h3>
+          <p><%= t(:process_content7) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics" id="design">
+          <h3> <%= t(:design) %> </h3>
+          <%= image_tag "design1.png" %>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title8) %></h3>
+          <p><%= t(:process_content8) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title9) %></h3>
+          <p><%= t(:process_content9) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title10) %></h3>
+          <p><%= t(:process_content10) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= partial 'contactform1' %>
+<div class="container">
+  <div class="full-process">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title11) %></h3>
+          <p><%= t(:process_content11) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+          <%= image_tag "design2.png" %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title12) %></h3>
+          <p><%= t(:process_content12) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title13) %></h3>
+          <p><%= t(:process_content13) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title14) %></h3>
+          <p><%= t(:process_content14) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title15) %></h3>
+          <p><%= t(:process_content15) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= partial 'contactform1' %>
+<div class="container">
+  <div class="full-process">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics" id="build">
+          <h3> <%= t(:build) %> </h3>
+          <%= image_tag "build.png" %>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title16) %></h3>
+          <p><%= t(:process_content16) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title17) %></h3>
+          <p><%= t(:process_content17) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title18) %></h3>
+          <p><%= t(:process_content18) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title19) %></h3>
+          <p><%= t(:process_content19) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title20) %></h3>
+          <p><%= t(:process_content20) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title21) %></h3>
+          <p><%= t(:process_content21) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title22) %></h3>
+          <p><%= t(:process_content22) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title23) %></h3>
+          <p><%= t(:process_content23) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= partial 'contactform1' %>
+<div class="container">
+  <div class="full-process">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title24) %></h3>
+          <p><%= t(:process_content24) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title25) %></h3>
+          <p><%= t(:process_content25) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title26) %></h3>
+          <p><%= t(:process_content26) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="left-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title27) %></h3>
+          <p><%= t(:process_content27) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-graphics">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="proces-step-content">
+          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
+          <h3><%= t(:process_title28) %></h3>
+          <p><%= t(:process_content28) %></p>
+          <div class="mobile-padded"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>

@@ -1,2 +1,54 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner banner-home" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url('images/home-bg.jpg');">>
+  <div class="banner-content text-center">
+    <h1><%= t(:baseline)%></h1>
+    <p><%= t(:baseline_p)%></p>
+    <%= link_to "#{t(:baseline_cta)}", "full-process.html" , class: "ds-btn"%>
+  </div>
+</div>
+
+
+<div class="wrapper-dark-home">
+  <div class="row">
+    <div class="home-icons">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="home-icon text-right">
+        <%= image_tag 'newbuild-home.png'%>
+        <h3><%= t(:home_new_build)%></h3>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="home-icon text-center">
+        <%= image_tag 'renovation-home.png'%>
+        <h3><%= t(:home_renovation)%></h3>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="home-icon text-left">
+        <%= image_tag 'extension-home.png'%>
+        <h3><%= t(:home_extension)%></h3>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="france text-left">
+          <%= image_tag 'france.png'%>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= partial 'media-partners' %>
+<%= partial 'simple-process' %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div class="padded">
+        <h3><%= t(:home_h3) %></h3>
+        <p><%= t(:home_p1) %></p>
+        <p><%= t(:home_p2) %></p>
+        <p><%= t(:home_p3) %></p>
+        <p><%= t(:home_p4) %></p>
+      </div>
+    </div>
+  </div>
+</div>
+<%= partial 'home-features' %>
