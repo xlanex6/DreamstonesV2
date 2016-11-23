@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   scope '(:locale)', locale: /fr/ do
-    devise_for :users
     root to: 'pages#home'
 
+    get '/process', to: 'pages#full_process'
 
-  end  
+
+
+  end
 end
