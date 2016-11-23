@@ -10,7 +10,7 @@
       <% @projects.each do |project| %>
         <%= link_to project_path(project) do %>
           <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="project-card" style="background-image: url( <%= asset_path("assets/images/projects/#{project.image}") %>), linear-gradient( -225deg ,rgba(0,0,0,0.4), rgba(0,0,0,0.4) );">
+              <div class="project-card" style="background-image: asset-data-url( <%= asset_path("#{project.image}") %>), linear-gradient( -225deg ,rgba(0,0,0,0.4), rgba(0,0,0,0.4) );">
                   <div class="project-title">
                     <h3><%= project.title %></h3>
                   </div>
