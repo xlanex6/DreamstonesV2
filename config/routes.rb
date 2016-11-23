@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
     get '/process', to: 'pages#full_process'
 
+    resources :projects, only: [:index, :show]
+
   end
 end
