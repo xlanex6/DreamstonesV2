@@ -7,7 +7,5 @@ Rails.application.routes.draw do
 
     get '/process', to: 'pages#full_process'
 
-
-
   end
 end
