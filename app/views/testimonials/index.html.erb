@@ -1,12 +1,6 @@
-<!-- <% @testimonials.each do |testi| %>
-  <h3><%= testi.author%></h3>
-  <p><%= testi.text%></p>
-<% end %> -->
-
-
 <div class="banner banner-commun" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url(<%= asset_path('testimonial-header.jpg') %>;">
   <div class="banner-content">
-    <h1>Our clients speak for us</h1>
+  <h1> <%= t(:testimonial_h1) %></h1>
   </div>
 </div>
   <ul class="nav nav-tabs nav-tabs-wrapper testi-menu" role="tablist">
