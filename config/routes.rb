@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   scope '(:locale)', locale: /fr/ do
     root to: 'pages#home'
     resources :projects, only: [:index, :show]
+    resources :testimonials, only: [:index]
     get '/process', to: 'pages#full_process'
 
   end
