@@ -1,1 +1,9 @@
 <h1><%= @project.title %></h1>
+
+<% @testimonials.each do |testi|  %>
+  <p><%= testi.text %></p>
+  <p><%= testi.author %></p>
+<% end %>
+
+
+<!--  ruby way   -->
