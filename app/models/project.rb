@@ -1,3 +1,3 @@
 class Project < ApplicationRecord
-  has_attachement :photo
+  has_attachment :photo
 end
