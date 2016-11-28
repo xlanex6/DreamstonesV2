@@ -6,7 +6,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @testimonials = Testimonial.limit(3).order("RANDOM()")
+    @testimonials = Testimonial.limit(2).order("RANDOM()")
   end
 
   private

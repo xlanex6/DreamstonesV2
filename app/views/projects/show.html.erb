@@ -1,9 +1,41 @@
-<h1><%= @project.title %></h1>
+<div class="banner banner-project"
+  style="background-image:
+    linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%),
+    url( <%= asset_path('sk2real-web.jpg')%> );">
+  <div class="banner-content">
+    <h1>Your project of <%= @project.title.downcase %> in France</h1>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class="project-text-content">
+        <h1><%= @project.title %></h1>
+        <p><%= @project.text %></p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="project-text-picture">
+      <%= image_tag "projects/process-project-web.png" %>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+</div>
+
+
 
 <% @testimonials.each do |testi|  %>
-  <p><%= testi.text %></p>
-  <p><%= testi.author %></p>
+<p><%= testi.text %></p>
+<p><%= testi.author %></p>
 <% end %>
-
 
 <!--  ruby way   -->
