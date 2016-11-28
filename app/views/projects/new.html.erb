@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <%= simple_form_for @project , url: projects_path, method: :post do |f| %>
+      <%= f.input :title %>
+      <%= f.input :text, as: :text%>
+      <%= f.input :new_buid, as: :boolean %>
+      <%= f.input :renovation, as: :boolean %>
+      <%= f.input :extension, as: :boolean %>
+      <%= f.input :prestige, as: :boolean %>
+      <%= f.input :image, as: :attachinary %>
+
+      <%= f.button :submit, class:"btn btn-primary btn-xl" %>
+
+    <% end %>
+  </div>
+</div>
