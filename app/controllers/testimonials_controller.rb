@@ -12,7 +12,7 @@ skip_before_action :authenticate_user!, only: [:index]
   def create
     @testimonial = Testimonial.new(testimonial_params)
     if @testimonial.save
-      redirect_to @testimonial, notice: "Your testimonial has been succefully added"
+      redirect_to testimonials_path, notice: "Your testimonial has been succefully added"
     else
       render :new
     end
@@ -21,7 +21,7 @@ skip_before_action :authenticate_user!, only: [:index]
   private
 
   def testimonial_params
-    params.require(:project).permit(:author,
+    params.require(:testimonial).permit(:author,
                                     :text,
                                     :video)
   end
