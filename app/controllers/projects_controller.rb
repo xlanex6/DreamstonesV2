@@ -33,7 +33,7 @@ class ProjectsController < ApplicationController
   def project_params
     params.require(:project).permit(:title,
                                     :text,
-                                    :image,
+                                    :photo,
                                     :new_buid,
                                     :renovate,
                                     :extension,

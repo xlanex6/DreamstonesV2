@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount Attachinary::Engine => "/attachinary"
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   devise_for :users
@@ -10,5 +11,4 @@ Rails.application.routes.draw do
     get '/process', to: 'pages#full_process'
 
   end
-  mount Attachinary::Engine => "/attachinary"
 end
