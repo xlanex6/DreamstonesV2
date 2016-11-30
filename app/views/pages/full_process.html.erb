@@ -1,6 +1,3 @@
----
-  title: Dreamstones unique process
----
 <div class="banner banner-process" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url(<%= asset_path('process-bg.png') %>);">
   <div class="banner-content">
     <h1><%= t(:process_page_h1) %></h1>
@@ -11,17 +8,17 @@
   <div class="container">
     <div class="row">
       <div class="process-menu">
-        <%= image_tag 'images/process/process-user.png' %>
-          <% link_to "#prep" , class:"js-scrollTo" do %>
-            <%= image_tag 'images/process/process-prep.png' %>
+        <%= image_tag 'process-user.png' %>
+          <%== link_to "#prep" , class:"js-scrollTo" do %>
+            <%= image_tag 'process-prep.png' %>
           <% end %>
-          <% link_to "#design" , class:"js-scrollTo" do %>
-            <%= image_tag 'images/process/process-design.png' %>
+          <%= link_to "#design" , class:"js-scrollTo" do %>
+            <%= image_tag 'process-design.png' %>
           <% end %>
-          <% link_to "#build" , class:"js-scrollTo" do %>
-            <%= image_tag 'images/process/process-build.png' %>
+          <%= link_to "#build" , class:"js-scrollTo" do %>
+            <%= image_tag 'process-build.png' %>
           <% end %>
-        <%= image_tag 'images/process/process-home.png' %>
+        <%= image_tag 'process-home.png' %>
       </div>
     </div>
   </div>
