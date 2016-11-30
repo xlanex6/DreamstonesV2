@@ -22,8 +22,8 @@ skip_before_action :authenticate_user!, only: [:index]
 
   def testimonial_params
     params.require(:testimonial).permit(:author,
-                                    :text,
-                                    :video)
+                                        :text,
+                                        :video)
   end
 
 end
