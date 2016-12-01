@@ -10,7 +10,7 @@
       <% @projects.each do |project| %>
         <%= link_to project_path(project), class: 'prob' do %>
           <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="project-card" style="background-image: linear-gradient( -225deg ,rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url('<%= cl_image_tag project.photo, height: 189, width: 295, crop: :fill %>');">
+              <div class="project-card" style="background-image: linear-gradient( -225deg ,rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url('<%= cl_image_path project.photo.path, height: 189, width: 295, crop: :fill %>');">
                   <div class="project-title">
                     <h3><%= project.title %></h3>
                   </div>
