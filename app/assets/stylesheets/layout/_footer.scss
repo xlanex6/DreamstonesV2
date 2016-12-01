@@ -1,1 +1,30 @@
 // Your footer style
+.footer {
+  margin-top: 30px;
+
+
+  .footer-item {
+
+  }
+
+  h3 {
+    text-align: center;
+    font-family: Montserrat-Bold;
+    color: $brand-color;
+    margin-top: 0;
+  }
+
+  p {
+    color: $grey-light;
+  }
+  a {
+    text-decoration: none;
+    color: $grey-light;
+    :hover {
+      color: $brand-color;
+    }
+  }
+}
+.social {
+  font-size: 30px;
+}
