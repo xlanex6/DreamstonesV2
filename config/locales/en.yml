@@ -50,7 +50,7 @@ en:
 
 ## pre_modal ##
   pre_modal_text: Get in touch in order to see if your project qualifies for DREAMSTONES' design and build process.
-  pre_modal_btn: Get this process for my project!
+  pre_modal_btn: Get this for my project!
 
   modal_form_h: Ask if we can help
   modal_form_content: Not all building projects need to follow our process. Some projects are too simple for our process to be beneficial, some others must follow our process to avoid any difficulties and increased costs.
@@ -157,8 +157,9 @@ en:
   process_content23: The health and safety plan and the waste management plan are set. The building warrant is obtained. Your site is also covered by our insurance for the entire build phase.
 
   process_title24: Site opening
-  process_content24: >
-                    On-site marking is in place.The site access is built. The skip is ordered. </br> Now, the work can begin!
+  process_content24: |
+                    On-site marking is in place.The site access is built. The skip is ordered.
+                    Now, the work can begin!
 
   process_title25: Building works
   process_content25: All trades get the final version of the blueprints with clear instructions on how and when to proceed for their part of the work. All other plans must be deleted. The building works start with a first site meeting organised by the site manager where all trades are introduced to each other. The site manager ensures the good communication with all trades and the building site is managed with a focus on quality, time but also safety. You are constantly kept informed of the progress and communication with all stakeholders thanks to regular progress reports and site pictures. You can sit back and see the magic happen as your house is getting built.
