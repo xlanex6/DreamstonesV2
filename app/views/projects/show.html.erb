@@ -18,7 +18,8 @@
     <div class="col-xs-12 col-sm-6">
       <div class="project-text-picture">
       <%= image_tag "projects/process-project-web.png" %>
-      <!--  image #{@project} -->
+      <%= cl_image_tag @project.photo.path, height: 189, width: 295, crop: :fill%>
+
       </div>
     </div>
   </div>
