@@ -5,6 +5,7 @@
 
  .home-features{
    background-color: $grey-dark;
+   margin-top: 15px;
  }
  .home-feature {
    padding-top: 20px;
@@ -17,7 +18,6 @@
    }
    p {
      color: $grey-light;
-
    }
    .icon {
      height: 50px;
@@ -53,3 +53,8 @@
    position: relative;
    height: 100px;
  }
+
+
+.margin-b {
+  margin-bottom: 21px;
+}
