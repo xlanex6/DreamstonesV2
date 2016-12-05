@@ -39,9 +39,9 @@ en:
 
   home: Home
   process: Process
-  testimonial: Testimonial
+  testimonial: Testimonials
   team: Team
-  project: Project
+  project: Projects
 
 
 ## media_partners ##
@@ -229,7 +229,7 @@ en:
 
 ####### project  ##################
 
-  project_page_h1:
+  project_page_h1: Every project is different
   testomial_project_title: Let's the client talk about us
 
 
