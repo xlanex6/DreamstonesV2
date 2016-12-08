@@ -3,7 +3,6 @@
     <h1><%= t(:process_page_h1) %></h1>
   </div>
 </div>
-
 <div class="wrapper-dark">
   <div class="container">
     <div class="row">
@@ -29,9 +28,8 @@
     <div class="time-line"><%= image_tag "full-line.png" %></div>
     <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <div class="proces-step-graphics">
-          <h3><%= image_tag "prepa1.png" %>   <%= t(:preparation) %></h3>
-
+        <div class="proces-step-graphics" id="prep">
+          <h3><%= image_tag "prepa1.png" %>  <%= t(:preparation) %></h3>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
@@ -68,8 +66,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="proces-step-graphics" id="prep">
-          <%= image_tag "prepa2.png" %>
+        <div class="proces-step-graphics">
         </div>
       </div>
     </div>
@@ -87,11 +84,6 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
-<%= render 'shared/contactform1' %>
-<div class="container">
-  <div class="full-process">
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <div class="proces-step-content">
@@ -103,25 +95,15 @@
       </div>
       <div class="col-xs-12 col-sm-6">
         <div class="proces-step-graphics">
-          <%= image_tag "prepa3.png" %>
-          <!-- <h3> <%= t(:preparation) %> </h3> -->
         </div>
       </div>
     </div>
-    <!-- <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        <div class="proces-step-graphics">
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="proces-step-content">
-          <div class="right-dot"><%= image_tag "orange-dot.png" %></div>
-          <h3><%= t(:process_title6) %></h3>
-          <p><%= t(:process_content6) %></p>
-          <div class="mobile-padded"></div>
-        </div>
-      </div>
-    </div> -->
+  </div>
+</div>
+  </div>
+<%= render 'shared/contactform1' %>
+<div class="container">
+  <div class="full-process">
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <div class="proces-step-content">
@@ -132,15 +114,14 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="proces-step-graphics">
+        <div class="proces-step-graphics text-center" id="design">
+          <h3><%= image_tag "design1.png" %>   <%= t(:design) %> </h3>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <div class="proces-step-graphics" id="design">
-          <h3> <%= t(:design) %> </h3>
-          <%= image_tag "design1.png" %>
+        <div class="proces-step-graphics" >
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
@@ -180,11 +161,6 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
-<%= render 'shared/contactform1' %>
-<div class="container">
-  <div class="full-process">
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <div class="proces-step-content">
@@ -196,7 +172,6 @@
       </div>
       <div class="col-xs-12 col-sm-6">
         <div class="proces-step-graphics">
-          <%= image_tag "design2.png" %>
         </div>
       </div>
     </div>
@@ -263,9 +238,8 @@
   <div class="full-process">
     <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <div class="proces-step-graphics" id="build">
-          <h3> <%= t(:build) %> </h3>
-          <%= image_tag "build.png" %>
+        <div class="proces-step-graphics text-center" id="build">
+          <h3><%= image_tag "build.png" %>  <%= t(:build) %> </h3>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
@@ -375,11 +349,6 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
-<%= render 'shared/contactform1' %>
-<div class="container">
-  <div class="full-process">
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <div class="proces-step-graphics">
@@ -452,13 +421,4 @@
     </div>
   </div>
 </div>
-<script>
-	$(document).ready(function() {
-		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
-			var page = $(this).attr('href'); // Page cible
-			var speed = 750; // Durée de l'animation (en ms)
-			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-			return false;
-		});
-	});
-</script>
+<%= render 'shared/contactform1' %>
