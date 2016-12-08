@@ -1,0 +1,4 @@
+<% @teams.each do |member| %>
+  <%= member.name %>
+  <%= cl_image_tag member.photo.path %>
+<% end %>

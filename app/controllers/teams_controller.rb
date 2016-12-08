@@ -1,4 +1,4 @@
-class TeamController < ApplicationController
+class TeamsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
   def index
