@@ -6,23 +6,36 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="team-cards">
-      <% ldata.team.each do |member| %>
-      <div class="col-xs-6 col-sm-3 col-md-2">
-        <div class="team-card">
-          <div class="team-card-picture">
-            <%= image_tag "#{member.picture}", class:"avatar-large" %>
-            <%= image_tag "#{member.dreamhouse}", class:"dreamhouse" %>
-          </div>
-          <div class="team-card-content">
-            <h3><%= member.name %></h3>
-            <span class="team-job"><%= t(member.job) %></span>
-            <p><%= t(member.baseline) %></p>
-            <span class="team-linkedin"><i class="fa fa-linkedin-square"></i></span>
-            <p class="team-email"><%= member.email %></p>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="team-cards">
+      <% data.team.each do |member| %>
+        <div class="col-xs-6 col-sm-3 col-md-2">
+          <div class="team-card">
+            <div class="team-card-picture">
+              <%= image_tag "#{member.picture}", class:"avatar-large" %>
+              <%= image_tag "#{member.dreamhouse}", class:"dreamhouse" %>
+            </div>
+            <div class="team-card-content">
+              <h3><%= member.name %></h3>
+            </div>
           </div>
         </div>
-      </div>
       <% end %>
     </div>
   </div>
@@ -30,6 +43,4 @@
 <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
   <p><%= t(:team_p1) %></p>
   <p><%= t(:team_p2) %></p>
-</div>
-  </div>
-</div>
+</div>-->
