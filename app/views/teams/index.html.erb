@@ -1,4 +1,13 @@
-<% @teams.each do |member| %>
-  <%= member.name %>
-  <%= cl_image_tag member.photo.path %>
-<% end %>
+<div class="banner banner-commun" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url( <%= asset_path("testimonial-header.jpg") %> );">
+  <div class="banner-content">
+    <h1><%= t(:team_title) %></h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <% @teams.each do |member| %>
+    <%= member.name %>
+    <%= cl_image_tag member.photo.path, with: 250, height: 100, crop: :fill %>
+    <% end %>
+  </div>
+</div>
