@@ -4,6 +4,7 @@
   border-radius: 8px;
   padding: 25px;
   margin-top: 10px;
+  margin-bottom: 10px;
 
 }
 
@@ -36,7 +37,7 @@ letter-spacing: 2.91px;
     color: $grey-dark;
     letter-spacing: 4.16px;
     text-decoration: none;
-    
+
   }
   a :hover {
       font-family: Montserrat-Bold;
@@ -49,4 +50,5 @@ letter-spacing: 2.91px;
 
 .cards {
   padding-top: 20px;
+  padding-bottom: 15px;
 }
