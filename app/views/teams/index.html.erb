@@ -3,11 +3,39 @@
     <h1><%= t(:team_title) %></h1>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <% @teams.each do |member| %>
-    <%= member.name %>
-    <%= cl_image_tag member.photo.path, with: 250, height: 100, crop: :fill %>
-    <% end %>
+<div class="row">
+  <div class="col-md-4">
+    <div class="country">
+      <h3>in the UK </h3>
+      <%= image_tag 'team-uk.png'%>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <h3><%= t(:team_uk) %></h3>
+    <div class="team-cards">
+      <% @teams.each do |member| %>
+      <div class="team-card">
+        <div class="team-card-picture">
+          <%= cl_image_tag member.photo.path, class:'avatar-bordered', fill: :crop %>
+        </div>
+        <div class="team-card-name">
+          <h3><%= member.name %></h3>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="country">
+      <h3>in France </h3>
+      <%= image_tag 'team-france.png'%>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <h3><%= t(:team_france1) %></h3>
+    <h3><%= t(:team_france2) %></h3>
+
   </div>
 </div>
