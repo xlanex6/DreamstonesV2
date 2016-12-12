@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     root to: 'pages#home'
     resources :projects, only: [:index, :show, :new, :create]
     resources :testimonials, only: [:index, :new, :create]
+    resources :teams, only: [:index, :new, :create]
     get '/process', to: 'pages#full_process'
 
   end

@@ -1,10 +1,12 @@
 .media-partners {
-  margin-top: 190px;
-  margin-bottom: 150px;
   h3 {
     text-align: center;
     margin-bottom: 45px;
   }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .media-partner {
   height: 60px;

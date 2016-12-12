@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <%= simple_form_for @team ,url: teams_path, method: :post do |f|%>
+      <%= f.input :name %>
+      <%= f.input :photo, as: :attachinary %>
+      <%= f.button :submit, class:'btn btn-primary btn-xl' %>
+    <% end %>
+  </div>
+</div>
