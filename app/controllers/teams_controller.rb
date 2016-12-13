@@ -3,6 +3,7 @@ class TeamsController < ApplicationController
 
   def index
     @teams = Team.all
+    @trades = YAML.load_file("#{Rails.root}/config/data/trades.yml")
   end
 
   def new

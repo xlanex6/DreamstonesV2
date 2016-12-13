@@ -1,0 +1,31 @@
+trades:
+  - name: Ground worker
+    picture:
+  - name: Bricklayers
+    picture:
+  - name: Roofers
+    picture:
+  - name: Joiners
+    picture:
+  - name: Electricians
+    picture:
+  - name: Plumbers
+    picture:
+  - name: Tilers
+    picture:
+  - name: Decorators
+    picture:
+
+engineer:
+  - name: Surveyor
+    picture:
+  - name: Soil
+    picture:
+  - name: Thermal
+    picture:
+  - name: Structure
+    picture:
+  - name: MEP
+    picture:
+  - name: Site manager
+    picture:
