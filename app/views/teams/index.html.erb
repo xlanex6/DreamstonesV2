@@ -16,7 +16,7 @@
       <% @teams.each do |member| %>
       <div class="team-card">
         <div class="team-card-picture">
-          <%= cl_image_tag member.photo.path, class:'avatar-bordered', crop: :thumb, gravity: :face %>
+          <%= cl_image_tag member.photo.path, class:'avatar-bordered', height:90, width:90, crop: :thumb, gravity: :face %>
         </div>
         <div class="team-card-name">
           <h3><%= member.name %></h3>
