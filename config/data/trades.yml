@@ -1,31 +1,31 @@
 trades:
   - name: Ground worker
-    picture:
+    picture: trades/ground_workers.svg
   - name: Bricklayers
-    picture:
+    picture: trades/bricklayers.svg
   - name: Roofers
-    picture:
+    picture: trades/roofers.svg
   - name: Joiners
-    picture:
+    picture: trades/joiners.svg
   - name: Electricians
-    picture:
+    picture: trades/electricians.svg
   - name: Plumbers
-    picture:
+    picture: trades/plumbers.svg
   - name: Tilers
-    picture:
+    picture: trades/tilers.svg
   - name: Decorators
-    picture:
+    picture: trades/decorators.svg
 
 engineer:
   - name: Surveyor
-    picture:
+    picture: trades/surveyor.svg
   - name: Soil
-    picture:
+    picture: trades/soil.svg
   - name: Thermal
-    picture:
+    picture: trades/thermal.svg
   - name: Structure
-    picture:
+    picture: trades/structure.svg
   - name: MEP
-    picture:
+    picture: trades/mep.svg
   - name: Site manager
-    picture:
+    picture: trades/sitemanagers.svg

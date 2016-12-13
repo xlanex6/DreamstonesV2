@@ -35,17 +35,23 @@
   </div>
   <div class="col-md-8">
     <h3><%= t(:team_france1) %></h3>
-    <% @trades['engineer'].each do |trade| %>
-    <ul class="list-inline">
-      <li><%= trade['name']%></li>
-    </ul>
-    <% end %>
+    <div class="team-fr">
+      <% @trades['engineer'].each do |trade| %>
+        <div class="team-fr-item">
+          <%= image_tag "#{trade['picture']}" %>
+          <%= trade['name']%>
+        </div>
+      <% end %>
+    </div>
     <h3><%= t(:team_france2) %></h3>
-    <% @trades['trades'].each do |trade| %>
-    <ul class="list-inline">
-      <li><%= trade['name']%></li>
-    </ul>
-    <% end %>
-
+    <div class="team-fr">
+      <% @trades['trades'].each do |trade| %>
+      <div class="team-fr-item">
+        <%= image_tag "#{trade['picture']}" %>
+        <%= trade['name']%>
+      </div>
+      <% end %>
+    </div>
+<div class="padded"></div>
   </div>
 </div>
