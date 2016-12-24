@@ -7,18 +7,20 @@
   <div class="row">
 <div class="text-center"><iframe width="853" height="480" src="https://www.youtube.com/embed/ObUcj1pCgrg?rel=0&amp;showinfo=0;autoplay=1" frameborder="0" allowfullscreen></iframe></div>
   <div class="cards">
-    <% @testimonials.each do |testimonial| %>
-      <div class="col-xs-12 col-md-4">
-        <div class="testi-card">
-          <div class="testi-card-content">
-            <p>"<%= testimonial.text %>"</p>
-          </div>
-          <div class="testi-card-name">
-            <h3><%= testimonial.author %></h3>
+      <div class="grid">
+        <% @testimonials.each do |testimonial| %>
+        <div class="grid-item">
+          <div class="testi-card">
+            <div class="testi-card-content">
+              <p>"<%= testimonial.text %>"</p>
+            </div>
+            <div class="testi-card-name">
+              <h3><%= testimonial.author %></h3>
+            </div>
           </div>
         </div>
+        <% end %>
       </div>
-      <% end %>
     </div>
   </div>
 </div>

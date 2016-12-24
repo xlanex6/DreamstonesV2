@@ -45,15 +45,13 @@ ActiveRecord::Schema.define(version: 20161214143429) do
   create_table "projects", force: :cascade do |t|
     t.string   "title"
     t.string   "photo"
-    t.boolean  "new_buid",    default: false
-    t.boolean  "renovation",  default: false
-    t.boolean  "extension",   default: false
-    t.boolean  "prestige",    default: false
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.boolean  "new_buid",   default: false
+    t.boolean  "renovation", default: false
+    t.boolean  "extension",  default: false
+    t.boolean  "prestige",   default: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.text     "text"
-    t.text     "description"
-    t.string   "keywords"
     t.string   "slug"
     t.index ["slug"], name: "index_projects_on_slug", unique: true, using: :btree
   end
