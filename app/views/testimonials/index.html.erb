@@ -9,7 +9,7 @@
   <div class="cards">
       <div class="grid">
         <% @testimonials.each do |testimonial| %>
-        <div class="grid-item">
+        <div class="<%= important?(testimonial) %>">
           <div class="testi-card">
             <div class="testi-card-content">
               <p>"<%= testimonial.text %>"</p>
