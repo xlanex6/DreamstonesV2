@@ -9,6 +9,7 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
   <body>
+    <div id="body-top"></div>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
@@ -16,6 +17,6 @@
     <%= cloudinary_js_config %>
     <%= render 'shared/footer' %>
     <%= render 'shared/external-script' %>
-    <a href="#" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+    <a href="#body-top" id="return-to-top" class="js-scrollTo"><i class="fa fa-chevron-up"></i></a>
   </body>
 </html>
