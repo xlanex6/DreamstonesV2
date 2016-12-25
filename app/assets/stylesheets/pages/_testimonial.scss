@@ -14,9 +14,11 @@
     font-size: 16px;
     letter-spacing: 3.33px;
     text-align: right;
+    margin-top: 10px;
+    margin-bottom: 6px;
   }
   color: $brand-color;
-  margin-right: 10px;
+  margin-right: 8px;
 
 }
 
@@ -51,4 +53,5 @@ letter-spacing: 2.91px;
 .cards {
   padding-top: 20px;
   padding-bottom: 15px;
+  text-align: center;
 }

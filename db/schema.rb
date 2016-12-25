@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161214143429) do
+ActiveRecord::Schema.define(version: 20161224181809) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,15 +45,13 @@ ActiveRecord::Schema.define(version: 20161214143429) do
   create_table "projects", force: :cascade do |t|
     t.string   "title"
     t.string   "photo"
-    t.boolean  "new_buid",    default: false
-    t.boolean  "renovation",  default: false
-    t.boolean  "extension",   default: false
-    t.boolean  "prestige",    default: false
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.boolean  "new_buid",   default: false
+    t.boolean  "renovation", default: false
+    t.boolean  "extension",  default: false
+    t.boolean  "prestige",   default: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.text     "text"
-    t.text     "description"
-    t.string   "keywords"
     t.string   "slug"
     t.index ["slug"], name: "index_projects_on_slug", unique: true, using: :btree
   end
@@ -69,8 +67,9 @@ ActiveRecord::Schema.define(version: 20161214143429) do
     t.string   "text"
     t.string   "author"
     t.string   "video"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.boolean  "important",  default: false
   end
 
   create_table "users", force: :cascade do |t|
