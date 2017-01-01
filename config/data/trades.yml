@@ -17,15 +17,27 @@ trades:
     picture: trades/decorators.svg
 
 engineer:
-  - name: Surveyor
+  - name: |
+      Land </br>
+      surveyors
     picture: trades/surveyor.svg
-  - name: Soil
+  - name: |
+      Soil </br>
+      engineers
     picture: trades/soil.svg
-  - name: Thermal
+  - name: |
+      Thermal </br>
+      engineers
     picture: trades/thermal.svg
-  - name: Structure
+  - name: |
+      Structure </br>
+      engineers
     picture: trades/structure.svg
-  - name: MEP
+  - name: |
+      MEP </br>
+      engineers
     picture: trades/mep.svg
-  - name: Site manager
+  - name: |
+      Site </br>
+      managers
     picture: trades/sitemanagers.svg

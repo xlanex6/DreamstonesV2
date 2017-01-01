@@ -39,7 +39,7 @@
       <% @trades['engineer'].each do |trade| %>
         <div class="team-fr-item">
           <%= image_tag "#{trade['picture']}" %>
-          <%= trade['name']%>
+          <%= simple_format(trade['name'])%>
         </div>
       <% end %>
     </div>
