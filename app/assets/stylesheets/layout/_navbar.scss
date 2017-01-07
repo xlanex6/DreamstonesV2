@@ -38,6 +38,7 @@
   }
 }
 
+
 /* Navbar right section (with form, links, button) */
 .navbar-wagon-right {
   display: flex;
@@ -114,6 +115,11 @@
 }
 
 /* Navbar dropdown menu */
+
+.dropdown {
+  color: $grey-light;
+}
+
 .navbar-wagon-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
