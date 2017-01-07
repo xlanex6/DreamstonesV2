@@ -6,14 +6,16 @@
   background-size: cover;
   background-position: center;
   h1 {
-    font-family: Montserrat-Bold;
+    font-family: $header-font;
+    font-weight: bold;
     font-size: 48px;
     color: $brand-color;
     letter-spacing: 5.0px;
   }
   p {
     padding-bottom: 30px;
-    font-family: OpenSans-CondensedLight;
+    font-family: $base-font;
+    font-weight: lighter;
     font-size: 36px;
     color: #FFFFFF;
     }

@@ -12,7 +12,7 @@
    padding-bottom: 20px;
    h3 {
      color: $brand-color;
-     font-weight: bolder;
+     font-weight: bold;
      letter-spacing: 0.62px;
 
    }
@@ -26,7 +26,8 @@
 
 
  .home-icon h3 {
-   font-family: Montserrat-Bold;
+   font-family: $header-font;
+   font-weight: bold;
    font-size: 30px;
    color: #F5A623;
    letter-spacing: 1.25px;

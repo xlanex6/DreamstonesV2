@@ -24,7 +24,8 @@
   text-transform: uppercase;
   text-decoration: none;
   h3 {
-    font-family: Montserrat-Bold;
+    font-family: $header-font;
+    font-weight: bold;
     font-size: 20px;
     color: #FFFFFF;
     letter-spacing: 3px;

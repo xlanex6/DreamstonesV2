@@ -10,7 +10,8 @@
 
 .testi-card-name {
   h3 {
-    font-family: Montserrat-Bold;
+    font-family: $header-font;
+    font-weight: bold;
     font-size: 16px;
     letter-spacing: 3.33px;
     text-align: right;
@@ -23,7 +24,8 @@
 }
 
 .testi-card-content {
-font-family: OpenSans-Light;
+font-family: $base-font;
+font-weight: lighter;
 font-size: 14px;
 color: #D8D8D8;
 letter-spacing: 2.91px;
@@ -34,7 +36,8 @@ letter-spacing: 2.91px;
   display: flex;
   justify-content: center;
   a {
-    font-family: Montserrat-Bold;
+    font-family: $header-font;
+    font-weight: bold;
     font-size: 20px;
     color: $grey-dark;
     letter-spacing: 4.16px;
@@ -42,7 +45,8 @@ letter-spacing: 2.91px;
 
   }
   a :hover {
-      font-family: Montserrat-Bold;
+      font-family: $header-font;
+      font-weight: bold;
       font-size: 20px;
       color: $grey-dark;
       letter-spacing: 4.16px;
