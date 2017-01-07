@@ -12,7 +12,7 @@ SitemapGenerator::Sitemap.create do
   #
   # Defaults: :priority => 0.5, :changefreq => 'weekly',
   #           :lastmod => Time.now, :host => default_host
-  #
+
   # Examples:
   #
   # Add '/articles'
@@ -24,4 +24,32 @@ SitemapGenerator::Sitemap.create do
   #   Article.find_each do |article|
   #     add article_path(article), :lastmod => article.updated_at
   #   end
+
+  # match '/ask-more-information', to: => redirect('/process')
+  # match '/buildinginfrance.html', to: => redirect('/process')
+  # match '/users/dreamstones', to: => redirect('/process')
+  # match '/contact.html', to: => redirect('/process')
+  # match '/building-projects.html', to: => redirect('/process')
+  # match '/projects.html', to: => redirect('/process')
+  # match '/legal-mentions.html', to: => redirect('/process')
+  # match '/italy.html', to: => redirect('/process')
+  # match '/builder-brokers-faqs.html', to: => redirect('/process')
+  # match '/about.html', to: => redirect('/process')
+  # match '/contact-us.html', to: => redirect('/process')
+  # match '/homebuilding.html', to: => redirect('/process')
+  # match '/user/logout', to: => redirect('/process')
+  # match '/evaluation.html', to: => redirect('/process')
+  # match '/dreamstones-services.html', to: => redirect('/process')
+  # match '/renovation.html-0', to: => redirect('/process')
+  # match '/renovation.html', to: => redirect('/process')
+  # match '/faqs.html', to: => redirect('/process')
+  # match '/extensionveranda.html', to: => redirect('/process')
+  # match '/extension.html', to: => redirect('/process')
+  # match '/united-kingdom.html', to: => redirect('/process')
+  # match '/spain.html', to: => redirect('/process')
+  # match '/design-build-process.html', to: => redirect('/process')
+  # match '/design.html', to: => redirect('/process')
+  # match '/preparation.html', to: => redirect('/process')
+  # match '/new-build.html', to: => redirect('/process')
+  # match '/portugal.html', to: => redirect('/process')
 end
