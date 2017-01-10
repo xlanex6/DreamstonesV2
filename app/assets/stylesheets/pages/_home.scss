@@ -34,7 +34,7 @@
  }
 
  .home-icons {
-   height: 190px;
+   height: 100%;
    background-color: $grey-dark;
  }
 
@@ -42,21 +42,62 @@
    position: relative;
    top: -90px;
    img {
-     height: 187px;
+       max-width: 187px;
+       height: auto;
    }
+ }
+
+ #new-build {
+  text-align: right;
+ }
+ #renovation {
+   text-align: center;
+ }
+ #extension {
+   text-align: left;
+ }
+
+ @media (max-width: $screen-xs-min) {
+   #new-build, #renovation, #extension {
+     text-align: center;
+   }
+   .home-icon {
+     position: relative;
+     top: 0px;
+   }
+   .france {
+      text-align: center;
+      margin-top: 150px;
+      margin-bottom: 50px;
+   }
+   .padded {
+     display: none;
+   }
+ }
+
+ @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+   .france {
+      text-align: center;
+      margin-bottom: 54px;
+      margin-top: 60px;
+   }
+   .padded {
+     display: none;
+   }
+
  }
 
  .wrapper-dark-home {
    background-color: $grey-dark;
-   height: 100px;
+   height: 100%;
 
  }
 
- .france {
-   top: -150px;
-   position: relative;
-   height: 100px;
- }
+.france {
+ top: -150px;
+ position: relative;
+ height: 100px;
+}
 
 .margin-b {
   margin-bottom: 21px;
