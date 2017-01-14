@@ -41,6 +41,7 @@
  .home-icon {
    position: relative;
    top: -90px;
+   height: 180px;
    img {
        max-width: 187px;
        height: auto;
@@ -64,6 +65,7 @@
    .home-icon {
      position: relative;
      top: 0px;
+     height: auto;
    }
    .france {
       text-align: center;
@@ -83,6 +85,10 @@
    }
    .padded {
      display: none;
+   }
+   .home-icon {
+     position: relative;
+     height: auto;
    }
 
  }
