@@ -1,5 +1,4 @@
 .slider {
-  background-color: #4A4A4A;
   height: 433px;
   position: relative;
   display: flex;
@@ -8,6 +7,16 @@
   margin-bottom: 40px;
   margin-top: 40px;
   }
+
+.slider-light {
+  background-color: $grey-light;
+
+}
+.slider-dark {
+  background-color: $grey-dark;
+
+}
+
 
 .right {
   height: 100%;
