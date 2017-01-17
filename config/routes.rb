@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   devise_for :users
   scope '(:locale)', locale: /fr/ do
     root to: 'pages#home'
-    resources :projects, only: [:index, :show, :new, :create]
+    resources :projects, only: [:index, :show, :new, :create, :edit, :update]
     resources :testimonials, only: [:index, :new, :create]
     resources :teams, only: [:index, :new, :create]
     get '/process', to: 'pages#full_process'

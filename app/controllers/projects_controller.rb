@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_action :set_user, only: [:show]
+  before_action :set_user, only: [:show, :edit, :update]
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
@@ -22,6 +22,18 @@ class ProjectsController < ApplicationController
       render :new
     end
   end
+
+  def edit
+  end
+
+  def update
+    if @project.update(project_params)
+      redirect_to @project, notice: "Your project has been succefully updated"
+    else
+      render :edit
+    end
+  end
+
 
 
   private
