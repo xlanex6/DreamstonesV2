@@ -13,6 +13,7 @@
       <div class="project-text-content">
         <h2><%= @project.title %></h2>
         <p><%= @project.text %></p>
+          <%= link_to t(:pre_modal_btn_landing),"https://dreamstones.typeform.com/to/FGLHsi", data: { mode: "1"}, target:"_blank", class:"typeform-share ds-btn btn-orange" %>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6">
@@ -24,8 +25,9 @@
     </div>
   </div>
 </div>
-<%= render 'shared/home-features' %>
 <%= render 'shared/simple-process-light' %>
+<%= render 'shared/contactform-landing' %>
+<%= render 'shared/home-features' %>
 <div class="container">
   <div class="row">
     <h2 class="text-center"><%= t(:testomial_project_title) %></h2>
@@ -43,10 +45,3 @@
     <% end %>
   </div>
 </div>
-
-
-
-
-
-
-<!--  ruby way   -->
