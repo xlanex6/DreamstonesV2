@@ -4,4 +4,4 @@ Dreamstones V2.1
 
 ###Sky is limit
 
-And let's talk about this
+nous somme donc Ok sur le mot
