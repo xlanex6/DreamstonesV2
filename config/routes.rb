@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :testimonials, only: [:index, :new, :create]
     resources :teams, only: [:index, :new, :create]
     get '/process', to: 'pages#full_process'
+    get '/mentions', to: 'pages#legals_mentions'
 
 
     ###### redirect
