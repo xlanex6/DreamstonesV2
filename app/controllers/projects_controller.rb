@@ -49,7 +49,8 @@ class ProjectsController < ApplicationController
                                     :new_buid,
                                     :renovate,
                                     :extension,
-                                    :prestige )
+                                    :prestige,
+                                    :homepage )
     end
 
 end

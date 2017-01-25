@@ -6,5 +6,6 @@ class PagesController < ApplicationController
                                                   :legals_mentions ]
 
   def home
+    @projects = Project.where(homepage: true)
   end
 end
