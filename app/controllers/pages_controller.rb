@@ -3,7 +3,7 @@ class PagesController < ApplicationController
                                                   :full_process,
                                                   :project,
                                                   :testimonial,
-                                                  :mentions ]
+                                                  :legals_mentions ]
 
   def home
   end
