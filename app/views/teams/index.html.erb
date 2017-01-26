@@ -10,19 +10,21 @@
       <%= image_tag 'team-uk.png'%>
     </div>
   </div>
-  <div class="col-md-8">
-    <h3><%= t(:team_uk) %></h3>
-    <div class="team-cards">
-      <% @teams.each do |member| %>
-      <div class="team-card">
-        <div class="team-card-picture">
-          <%= cl_image_tag member.photo.path, class:'avatar-bordered', height:90, width:90, crop: :thumb, gravity: :face %>
+  <div class="team">
+    <div class="col-md-8">
+      <h3><%= t(:team_uk) %></h3>
+      <div class="team-cards">
+        <% @teams.each do |member| %>
+        <div class="team-card">
+          <div class="team-card-picture">
+            <%= cl_image_tag member.photo.path, class:'avatar-bordered', height:90, width:90, crop: :thumb, gravity: :face %>
+          </div>
+          <div class="team-card-name">
+            <h3><%= member.name %></h3>
+          </div>
         </div>
-        <div class="team-card-name">
-          <h3><%= member.name %></h3>
-        </div>
+        <% end %>
       </div>
-      <% end %>
     </div>
   </div>
 </div>
@@ -33,26 +35,28 @@
       <%= image_tag 'team-france.png'%>
     </div>
   </div>
-  <div class="col-md-8">
-    <h3><%= t(:team_france1) %></h3>
-    <div class="team-fr">
-      <% @trades['engineer'].each do |trade| %>
+  <div class="team">
+    <div class="col-md-8">
+      <h3><%= t(:team_france1) %></h3>
+      <div class="team-fr">
+        <% @trades['engineer'].each do |trade| %>
+          <div class="team-fr-item">
+            <%= image_tag "#{trade['picture']}" %>
+            <%= simple_format(trade['name'])%>
+          </div>
+        <% end %>
+      </div>
+      <h3><%= t(:team_france2) %></h3>
+      <div class="team-fr">
+        <% @trades['trades'].each do |trade| %>
         <div class="team-fr-item">
           <%= image_tag "#{trade['picture']}" %>
-          <%= simple_format(trade['name'])%>
+          <%= trade['name']%>
         </div>
-      <% end %>
-    </div>
-    <h3><%= t(:team_france2) %></h3>
-    <div class="team-fr">
-      <% @trades['trades'].each do |trade| %>
-      <div class="team-fr-item">
-        <%= image_tag "#{trade['picture']}" %>
-        <%= trade['name']%>
+        <% end %>
       </div>
-      <% end %>
-    </div>
-  <!-- </div>
+    <!-- </div>
+  </div>
 </div>
 <div class="container">
   <div class="row">
