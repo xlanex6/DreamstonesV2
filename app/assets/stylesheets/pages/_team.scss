@@ -1,11 +1,14 @@
 .team-cards {
-  display: flex;
   flex-direction: row;
+  display: flex;
+  width: 900px;
+  flex-wrap: wrap;
 }
 
 
 .team-card {
   display: flex;
+  flex-basis: 120px;
   flex-direction: column;
   background-color: $grey-light;
   color: $grey-dark;
