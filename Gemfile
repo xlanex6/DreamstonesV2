@@ -27,6 +27,7 @@ gem "coffee-rails"
 gem 'friendly_id', '~> 5.1.0'
 gem 'rails-assets-jquery-masonry', source: 'https://rails-assets.org'
 gem 'sitemap_generator'
+gem 'forest_liana'
 
 
 group :development, :test do

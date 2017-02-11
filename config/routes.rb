@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount ForestLiana::Engine => '/forest'
   mount Attachinary::Engine => "/attachinary"
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
