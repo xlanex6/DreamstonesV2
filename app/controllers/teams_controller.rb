@@ -2,7 +2,8 @@ class TeamsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
   def index
-    @teams = Team.all
+    @site_team = Team.where("team_type = ?", "Site-Manager")
+    @hq_team = Team.where("team_type = ?", "Head-Office")
     @trades = YAML.load_file("#{Rails.root}/config/data/trades.yml")
   end
 
@@ -23,6 +24,8 @@ class TeamsController < ApplicationController
   private
 
   def team_params
-    params.require(:team).permit(:name, :photo)
+    params.require(:team).permit( :name,
+                                  :photo,
+                                  :team_type)
   end
 end

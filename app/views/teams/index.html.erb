@@ -14,13 +14,13 @@
     <div class="col-md-8">
       <h3><%= t(:team_uk) %></h3>
       <div class="team-cards">
-        <% @teams.each do |member| %>
+        <% @hq_team.each do |hq_team_member| %>
         <div class="team-card">
           <div class="team-card-picture">
-            <%= cl_image_tag member.photo.path, class:'avatar-bordered', height:90, width:90, crop: :thumb, gravity: :face %>
+            <%= cl_image_tag hq_team_member.photo.path, class:'avatar-bordered', height:90, width:90, crop: :thumb, gravity: :face %>
           </div>
           <div class="team-card-name">
-            <h3><%= member.name %></h3>
+            <h3><%= hq_team_member.name %></h3>
           </div>
         </div>
         <% end %>
@@ -38,6 +38,19 @@
   <div class="team">
     <div class="col-md-8">
       <h3><%= t(:team_france1) %></h3>
+      <div class="team-cards">
+        <% @site_team.each do |site_team_member| %>
+        <div class="team-card">
+          <div class="team-card-picture">
+            <%= cl_image_tag site_team_member.photo.path, class:'avatar-bordered', height:90, width:90, crop: :thumb, gravity: :face %>
+          </div>
+          <div class="team-card-name">
+            <h3><%= site_team_member.name %></h3>
+          </div>
+        </div>
+        <% end %>
+      </div>
+      <h3><%= t(:team_france2) %></h3>
       <div class="team-fr">
         <% @trades['engineer'].each do |trade| %>
           <div class="team-fr-item">
@@ -46,7 +59,7 @@
           </div>
         <% end %>
       </div>
-      <h3><%= t(:team_france2) %></h3>
+      <h3><%= t(:team_france3) %></h3>
       <div class="team-fr">
         <% @trades['trades'].each do |trade| %>
         <div class="team-fr-item">

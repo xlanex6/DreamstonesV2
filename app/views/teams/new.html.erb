@@ -2,6 +2,7 @@
   <div class="row">
     <%= simple_form_for @team ,url: teams_path, method: :post do |f|%>
       <%= f.input :name %>
+      <%= f.input :team_type , as: :radio_buttons ,collection: ["Head-Office", "Site-Manager"] %>
       <%= f.input :photo, as: :attachinary %>
       <%= f.button :submit, class:'btn btn-primary btn-xl' %>
     <% end %>
