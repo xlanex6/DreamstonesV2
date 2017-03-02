@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     resources :projects, only: [:index, :show, :new, :create, :edit, :update]
     resources :testimonials, only: [:index, :new, :create]
     resources :teams, only: [:index, :new, :create]
-    resources :latest_project, only: [:new, :create, :edit, :update]
+    resources :portofolios, only: [:new, :create, :edit, :update]
     get '/process', to: 'pages#full_process'
     get '/mentions', to: 'pages#legals_mentions'
 

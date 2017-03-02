@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+
+  <%= simple_form_for @portofolio, url: portofolios_path, method: :post do |f| %>
+    <%= f.input :title %>
+    <%= f.input :main_picture, as: :attachinary %>
+    <%= f.input :area %>
+    <%= f.input :category %>
+    <%= f.input :size %>
+    <%= f.input :photos, as: :attachinary %>
+    <%= f.button :submit, class:"btn btn-primary btn-xl" %>
+  <% end %>
+  </div>
+</div>
