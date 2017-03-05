@@ -2,7 +2,8 @@
   padding-top: 50px;
   &:hover {
     .project-card {
-      filter: blur(5px);
+      filter: blur(4px);
+      overflow: hidden;
     }
     .overlay {
       opacity: 1;
@@ -13,6 +14,7 @@
 
 .project-card-global {
   position: relative;
+  border-radius: 8px;
 }
 
 .project-card {
@@ -89,7 +91,15 @@
     text-align: center;
     margin-top: 40px;
   }
+}
 
+// Last projects MODAL
 
+.modal-title {
+  font-size: 32px;
+  color: $grey-dark;
+}
 
+.modal-body {
+  text-align: center;
 }
