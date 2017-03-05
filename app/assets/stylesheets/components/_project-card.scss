@@ -1,5 +1,11 @@
 .project-cards {
   padding-top: 50px;
+
+}
+
+.project-card-global {
+  position: relative;
+  border-radius: 8px;
   &:hover {
     .project-card {
       filter: blur(4px);
@@ -9,12 +15,6 @@
       opacity: 1;
     }
   }
-
-}
-
-.project-card-global {
-  position: relative;
-  border-radius: 8px;
 }
 
 .project-card {
@@ -94,12 +94,50 @@
 }
 
 // Last projects MODAL
-
+.modal-content {
+  text-align: center;
+  }
 .modal-title {
-  font-size: 32px;
-  color: $grey-dark;
+  h3 {
+    font-size: 48px;
+    color: $grey-dark;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+  }
 }
 
-.modal-body {
-  text-align: center;
+.modal-infos {
+  color: $grey-dark;
+  font-style: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: $brand-color;
+  margin: 0 30px;
+  box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+
+.modal-project-category {
+  img {
+    height: 55px;
+    width: 55px;
+  }
+  text-transform: uppercase;
+  // margin-left: 10px;
+  flex: 1;
+}
+
+.modal-project-size {
+  flex: 1;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.modal-project-area {
+  flex: 2;
+
 }
