@@ -1,5 +1,18 @@
 .project-cards {
   padding-top: 50px;
+  &:hover {
+    .project-card {
+      filter: blur(5px);
+    }
+    .overlay {
+      opacity: 1;
+    }
+  }
+
+}
+
+.project-card-global {
+  position: relative;
 }
 
 .project-card {
@@ -11,7 +24,8 @@
   background-size: cover !important;
   position: relative;
   margin-bottom: 20px;
-
+  color: white;
+  overflow: hidden;
 
   .project-title h3 {
     font-family: $header-font;
@@ -20,6 +34,62 @@
     letter-spacing: 3.78px;
     text-align: center;
   }
+
+  .project-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: $brand-color;
+    font-weight: bold;
+    font-size: 20px;
+    img {
+      height: 35px;
+      width: 35px;
+    }
+
+  }
+  .project-size {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: $brand-color;
+    padding: 0 5px;
+    color: $grey-dark;
+    font-weight: lighter;
+  }
+  .project-area {
+    position: absolute;
+    font-weight: bold;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: $brand-color;
+    img {
+      height: 32px;
+      width: 34px;
+    }
+  }
+
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgba(245,166,34,0.7);
+  opacity: 0;
+  h3 {
+    font-weight: bold;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
 
 
 }

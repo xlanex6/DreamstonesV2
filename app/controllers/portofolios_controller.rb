@@ -3,7 +3,7 @@ class PortofoliosController < ApplicationController
   # skip_before_action :authenticate_user!, only:  [:index]
 
   def index
-    @portofolio = Portofolio.all
+    @portofolios = Portofolio.last(3)
   end
 
   def new

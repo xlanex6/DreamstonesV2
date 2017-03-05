@@ -8,5 +8,14 @@ module ApplicationHelper
     end
   end
 
+  def icon_category(last_project)
+    if last_project == "Renovation"
+        "renovation"
+      elsif last_project == "New build"
+        "newbuild"
+      else
+        "extension"
+    end
+  end
 
 end
