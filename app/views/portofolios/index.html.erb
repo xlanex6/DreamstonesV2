@@ -4,26 +4,26 @@
       <% @portofolios.each do |last_project| %>
         <%= link_to root_path, class: 'prob' do %>
           <div class="col-xs-12 col-sm-6 col-md-4">
-<div class="project-card-global">
-  <div class="project-card" style="background-image: linear-gradient( -225deg ,rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url('<%= cl_image_path last_project.main_picture.path, height: 189, width: 295, crop: :fill %>');">
-      <div class="project-title">
-        <h3><%= last_project.title %></h3>
-      </div>
-    <div class="project-category">
-      <%= image_tag "#{icon_category(last_project.category)}-home.png" %> <%= last_project.category %>
-    </div>
-    <div class="project-size">
-      <%= last_project.size %> m²
-    </div>
-    <div class="project-area">
-      <%= image_tag 'france-raw.png'%> <%= last_project.area %>
-    </div>
-  </div>
-  <div class="overlay">
-    <h3>See</br>more pictures</h3>
-  </div>
-</div>
+            <div class="project-card-global">
+              <div class="project-card" style="background-image: linear-gradient( -225deg ,rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url('<%= cl_image_path last_project.main_picture.path, height: 189, width: 295, crop: :fill %>');">
+                  <div class="project-title">
+                    <h3><%= last_project.title %></h3>
+                  </div>
+                <div class="project-category">
+                  <span><%= image_tag "#{icon_category(last_project.category)}-home.png" %> <%= last_project.category %></span>
+                </div>
+                <div class="project-size">
+                  <span><%= last_project.size %> m²</span>
+                </div>
+                <div class="project-area">
+                  <span><%= image_tag 'france-raw.png'%> <%= last_project.area %></span>
+                </div>
+              </div>
+              <div class="overlay">
+                <h3>See</br>more pictures<br/><i class="fa fa-picture-o"></i></h3>
+              </div>
             </div>
+          </div>
         <% end %>
       <% end %>
     </div>
