@@ -37,7 +37,7 @@
           </ol>
           <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <%= cl_image_tag last_project.photos.first.path, width: 800, height: 500, crop: :fill%>
+                <%= cl_image_tag last_project.main_picture.path, width: 800, height: 500, crop: :fill%>
               </div>
             <% last_project.photos.all.each do |photo| %>
               <div class="item">
