@@ -37,7 +37,3 @@ engineer:
       MEP </br>
       engineers
     picture: trades/mep.svg
-  - name: |
-      Site </br>
-      managers
-    picture: trades/sitemanagers.svg
