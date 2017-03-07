@@ -1,0 +1,71 @@
+<%= link_to '', class: 'prob', data: { toggle:"modal", target: "#galerry-modal-#{last_project.id}"} do %>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="project-card-global">
+      <div class="project-card" style="background-image: linear-gradient( -225deg ,rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url('<%= cl_image_path last_project.main_picture.path, height: 189, width: 295, crop: :fill %>');">
+          <div class="project-title">
+            <h3><%= last_project.title %></h3>
+          </div>
+        <div class="project-category">
+          <span><%= image_tag "#{icon_category(last_project.category)}-home.png" %> <%= last_project.category %></span>
+        </div>
+        <div class="project-size">
+          <span><%= last_project.size %> m²</span>
+        </div>
+        <div class="project-area">
+          <span><%= image_tag 'france-raw.png'%> <%= last_project.area %></span>
+        </div>
+      </div>
+      <div class="overlay">
+        <h3>See</br>more pictures<br/><i class="fa fa-picture-o"></i></h3>
+      </div>
+    </div>
+  </div>
+<% end %>
+<div class="modal fade" id="galerry-modal-<%= last_project.id %>" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-project-title">
+          <h3><%= last_project.title %></h3>
+        </div>
+        <div id="carousel-last-project-<%= last_project.id %>" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <% indicator_generation(last_project.photos.count).each do |item| %>
+              <li data-target="#carousel-last-project-<%= last_project.id %>" data-slide-to="<%= item %>"></li>
+            <% end %>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <%= cl_image_tag last_project.photos.first.path, width: 800, height: 500, crop: :fill%>
+              </div>
+            <% last_project.photos.all.each do |photo| %>
+              <div class="item">
+                <%= cl_image_tag photo.path, width: 800, height: 500, crop: :fill%>
+              </div>
+            <% end %>
+          </div>
+          <a class="left carousel-control" href="#carousel-last-project-<%= last_project.id %>" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-last-project-<%= last_project.id %>" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      <div class="modal-infos">
+        <div class="modal-project-category">
+          <span><%= image_tag "#{icon_category(last_project.category)}-home.png" %> <%= last_project.category %></span>
+        </div>
+        <div class="modal-project-area">
+          <span><%= last_project.area %></span>
+        </div>
+        <div class="modal-project-size">
+          <span><%= last_project.size %> m²</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

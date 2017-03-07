@@ -29,7 +29,15 @@
 <%= render 'shared/home-features' %>
 <div class="container">
   <div class="row">
-    <h2 class="text-center"><%= t(:testomial_project_title) %></h2>
+    <div class="lastest-project-cards">
+      <h3><%= t(:last_project) %></h3>
+      <% @portofolios.each do |last_project| %>
+        <%= render partial: "shared/last-projects", locals: {last_project: last_project} %>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
+    <h3 class="text-center"><%= t(:testomial_project_title) %></h3>
     <% @testimonials.each do |testimonial|  %>
       <div class="col-xs-12 col-md-6">
         <div class="testi-card">

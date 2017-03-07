@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+
+<div class="col-md-6 col-md-offset-3">
+  <%= simple_form_for @portofolio, url: portofolios_path, method: :post do |f| %>
+    <%= f.input :title %>
+    <%= f.input :main_picture, as: :attachinary %>
+    <%= f.input :area %>
+    <%= f.input :category, collection: ["New build", "Renovation", "Extension"]%>
+    <%= f.input :size, label: "Size in M2 - only number !!" %>
+    <%= f.input :photos, as: :attachinary %>
+    <%= f.button :submit, class:"btn btn-primary btn-xl" %>
+  <% end %>
+</div>
+
+  </div>
+</div>

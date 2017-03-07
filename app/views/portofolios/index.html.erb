@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="lastest-project-cards">
+      <h3><%= t(:last_project) %></h3>
+      <% @portofolios.each do |last_project| %>
+        <%= render partial: "shared/last-projects", locals: {last_project: last_project} %>
+      <% end %>
+    </div>
+  </div>
+</div>
