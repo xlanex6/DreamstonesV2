@@ -1,6 +1,6 @@
 class PortofoliosController < ApplicationController
   before_action :set_portofolio, only: [:edit, :update]
-  # skip_before_action :authenticate_user!, only:  [:index]
+  skip_before_action :authenticate_user!, only:  [:index]
 
   def index
     @portofolios = Portofolio.last(3)
@@ -35,11 +35,11 @@ class PortofoliosController < ApplicationController
 
   def portofolio_params
     params.require(:portofolio).permit( :main_picture,
-                                            :title,
-                                            :area,
-                                            :category,
-                                            :size,
-                                            photos: [])
+                                        :title,
+                                        :area,
+                                        :category,
+                                        :size,
+                                        photos: [])
 
   end
 
