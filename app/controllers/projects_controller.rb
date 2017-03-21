@@ -9,6 +9,7 @@ class ProjectsController < ApplicationController
   def show
     @testimonials = Testimonial.limit(2).order("RANDOM()")
     @portofolios = Portofolio.last(3)
+    speed_optimisation(@project)
   end
 
   def new
@@ -52,6 +53,8 @@ class ProjectsController < ApplicationController
                                     :extension,
                                     :prestige,
                                     :homepage )
-    end
+  end
+
+
 
 end
