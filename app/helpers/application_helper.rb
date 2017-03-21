@@ -18,14 +18,4 @@ module ApplicationHelper
     end
   end
 
-  def indicator_generation(photo_number)
-    counter = 0
-    indicator_precode = ["0"]
-    photo_number.times do |photo|
-      indicator_precode << "#{counter}"
-      counter += 1
-    end
-    indicator_precode
-  end
-
 end
