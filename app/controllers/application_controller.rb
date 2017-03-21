@@ -11,4 +11,9 @@ class ApplicationController < ActionController::Base
   def default_url_options
     { locale: I18n.locale == I18n.default_locale ? nil : I18n.locale }
   end
+
+  def speed_optimisation(instance)
+    fresh_when last_modified: instance.updated_at unless Rails.env.production?
+  end
+
 end

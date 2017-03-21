@@ -6,7 +6,7 @@
 <div class="banner banner-project"
   style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url( <%= asset_path('sk2real.jpg')%> );">
   <div class="banner-content">
-    <h1>Architect & builders for your<%= @project.title.downcase %> project</h1>
+    <h1>Architect & builders </br> for your <%= @project.title.downcase %> project</h1>
   </div>
 </div>
 
@@ -24,7 +24,7 @@
     <div class="col-xs-12 col-sm-6">
       <div class="project-text-picture text-center">
       <%= image_tag "projects/process-project-web.png" %>
-      <%= cl_image_tag @project.photo.path, height: 350, width: 550, crop: :fill, class:"img-top-pad"%>
+      <%= cl_image_tag @project.photo.path, height: 350, width: 550, crop: :fill, class:"img-top-pad", alt: "Architect & builder for #{@project.title.downcase}"%>
 
       </div>
     </div>
