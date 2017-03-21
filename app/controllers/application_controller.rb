@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   end
 
   def speed_optimisation(instance)
-    fresh_when last_modified: instance.updated_at unless Rails.env.production?
+    fresh_when last_modified: instance.updated_at if Rails.env.production?
   end
 
 end
