@@ -8,4 +8,8 @@ class PagesController < ApplicationController
   def home
     @projects = Project.where(homepage: true)
   end
+
+  def robots
+    respond_to :text
+  end
 end
