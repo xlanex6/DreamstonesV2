@@ -9,6 +9,7 @@ class ProjectsController < ApplicationController
   def show
     @testimonials = Testimonial.limit(2).order("RANDOM()")
     @portofolios = Portofolio.last(3)
+    fresh_when last_modified: @project.updated_at
   end
 
   def new
