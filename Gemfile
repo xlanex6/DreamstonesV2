@@ -33,6 +33,7 @@ gem 'forest_liana'
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
+  gem "rails-erd"
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'

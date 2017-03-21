@@ -31,7 +31,7 @@
         </div>
         <div id="carousel-last-project-<%= last_project.id %>" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            <% indicator_generation(last_project.photos.count).each do |item| %>
+            <% (last_project.photos.count + 1).times do |item| %>
               <li data-target="#carousel-last-project-<%= last_project.id %>" data-slide-to="<%= item %>"></li>
             <% end %>
           </ol>
