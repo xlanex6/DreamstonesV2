@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170405191257) do
+ActiveRecord::Schema.define(version: 20170406111820) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,7 +68,6 @@ ActiveRecord::Schema.define(version: 20170405191257) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"
-    t.string   "photo"
     t.boolean  "new_buid",   default: false
     t.boolean  "renovation", default: false
     t.boolean  "extension",  default: false
@@ -83,7 +82,6 @@ ActiveRecord::Schema.define(version: 20170405191257) do
 
   create_table "teams", force: :cascade do |t|
     t.string   "name"
-    t.string   "photo"
     t.datetime "created_at",                         null: false
     t.datetime "updated_at",                         null: false
     t.string   "team_type",  default: "Head-Office"

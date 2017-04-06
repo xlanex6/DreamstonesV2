@@ -17,7 +17,9 @@
         <% @hq_team.each do |hq_team_member| %>
         <div class="team-card">
           <div class="team-card-picture">
-            <%= cl_image_tag hq_team_member.photo.path, class:'avatar-bordered', height:90, width:90, crop: :thumb, gravity: :face %>
+            <% if hq_team_member.photo? %>
+              <%= cl_image_tag hq_team_member.photo.path, class:'avatar-bordered', height:90, width:90, crop: :thumb, gravity: :face %>
+            <% end %>
           </div>
           <div class="team-card-name">
             <h3><%= hq_team_member.name %></h3>
