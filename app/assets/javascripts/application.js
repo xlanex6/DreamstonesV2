@@ -5,14 +5,9 @@
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
 //= require turbolinks
-//= require_tree .
+//= require typeform
 //= require masonry
-
-
-
-
-
-
+//= require_tree .
 
 
 
