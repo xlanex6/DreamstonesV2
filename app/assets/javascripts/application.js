@@ -4,14 +4,10 @@
 //= require jquery-fileupload/basic
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
-//= require_tree .
+//= require turbolinks
+//= require typeform
 //= require masonry
-
-
-
-
-
-
+//= require_tree .
 
 
 
