@@ -1,5 +1,4 @@
-$(document).on;
-"turbolinks:load", (function() {
+$(document).on("turbolinks:load", (function() {
   var qs, js, q, s, d = document,
     gi = d.getElementById,
     ce = d.createElement,
@@ -13,4 +12,4 @@ $(document).on;
     q = gt.call(d, "script")[0];
     q.parentNode.insertBefore(js, q);
   }
-})();
+}));
