@@ -29,6 +29,7 @@ gem 'rails-assets-jquery-masonry', source: 'https://rails-assets.org'
 gem 'sitemap_generator'
 gem 'forest_liana'
 gem 'intercom-rails'
+gem 'turbolinks', '~> 5.0', '>= 5.0.1'
 
 
 group :development, :test do
