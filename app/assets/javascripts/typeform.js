@@ -1,4 +1,5 @@
-$(document).on "turbolinks:load", (function() {
+$(document).on;
+"turbolinks:load", (function() {
   var qs, js, q, s, d = document,
     gi = d.getElementById,
     ce = d.createElement,
