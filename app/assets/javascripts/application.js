@@ -1,10 +1,15 @@
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require jquery-fileupload/basic
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
+//= require masonry
 //= require turbolinks
+<<<<<<< HEAD
+//= require_tree .
+=======
 //= require typeform
 //= require masonry
 //= require_tree .
@@ -35,3 +40,4 @@
 //     $( this ).addClass('is-checked');
 //   });
 // });
+>>>>>>> bdcd1f4d6dc8469f92d195669d7201d7dcb5e0df
