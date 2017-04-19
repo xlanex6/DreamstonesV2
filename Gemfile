@@ -30,6 +30,7 @@ gem 'sitemap_generator'
 gem 'forest_liana'
 gem 'intercom-rails'
 gem 'turbolinks', '~> 5.0', '>= 5.0.1'
+gem 'jquery-turbolinks'
 
 
 group :development, :test do
