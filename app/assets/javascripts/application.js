@@ -1,5 +1,4 @@
 //= require jquery
-//= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require jquery-fileupload/basic
@@ -7,5 +6,4 @@
 //= require masonry-raw
 //= require masonry
 //= require attachinary
-//= require turbolinks
 //= require_tree .
