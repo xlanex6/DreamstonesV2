@@ -28,8 +28,6 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'sitemap_generator'
 gem 'forest_liana'
 gem 'intercom-rails'
-gem 'turbolinks', '~> 5.0', '>= 5.0.1'
-gem 'jquery-turbolinks'
 
 
 group :development, :test do
