@@ -52,3 +52,7 @@ a:hover {
   background: $brand-color;
   height: 5px;
 }
+
+body {
+  padding-top: $nav-bar-height;
+}
