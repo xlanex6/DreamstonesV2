@@ -1,13 +1,11 @@
 <div class="navbar-wagon navbar-wagon-fixed">
-  <!-- Logo -->
   <%= link_to root_path , class: "navbar-wagon-brand" do %>
     <div class="logo navbar-wagon-right">
-    <%= image_tag "logo-light.png" %>
-    <h3>Dreamstones</h3>
+      <%= image_tag "logo-light.png" %>
+      <h3>Dreamstones</h3>
     </div>
   <% end %>
 
-  <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <%= link_to t(:home), root_path, {class:"navbar-wagon-item navbar-wagon-link"} %>
@@ -15,15 +13,15 @@
     <%= link_to t(:testimonial), testimonials_path, {class:"navbar-wagon-item navbar-wagon-link"} %>
     <%= link_to t(:project), projects_path, {class:"navbar-wagon-item navbar-wagon-link"} %>
     <%= link_to t(:team), teams_path, {class:"navbar-wagon-item navbar-wagon-link"} %>
-    <a class="typeform-share navbar-wagon-item navbar-wagon-link" href="https://dreamstones.typeform.com/to/Tf4mZY" data-mode="1" target="_blank">Contact</a>
-
+    <%= link_to 'Contact', "https://dreamstones.typeform.com/to/Tf4mZY", data: {mode: "1"}, target: "_blank", class: 'typeform-share navbar-wagon-item navbar-wagon-link' %>
   </div>
-
+  
   <div class="tel">
-    <p><i class="fa fa-phone-square"></i>  +44 (0) 141 312 3127</p>
+    <p>
+      <i class="fa fa-phone-square"></i>
+      +44 (0) 141 312 3127</p>
   </div>
 
-  <!-- Dropdown appearing on mobile only -->
   <div class="navbar-wagon-item hidden-md hidden-lg">
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
@@ -33,7 +31,9 @@
         <li><%= link_to t(:testimonial), testimonials_path  %></li>
         <li><%= link_to t(:project), projects_path %></li>
         <li><%= link_to t(:team), teams_path %></li>
-        <li><a class="typeform-share navbar-wagon-item navbar-wagon-link" href="https://dreamstones.typeform.com/to/Tf4mZY" data-mode="1" target="_blank">Contact</a></li>
+        <li>
+          <a class="typeform-share navbar-wagon-item navbar-wagon-link" href="https://dreamstones.typeform.com/to/Tf4mZY" data-mode="1" target="_blank">Contact</a>
+        </li>
       </ul>
     </div>
   </div>
