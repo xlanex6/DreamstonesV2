@@ -1,6 +1,9 @@
 // Graphical variables
 @import "config/variables";
 @import "config/bootstrap_variables";
+@import "config/mixins";
+
+@include scrollbars(.35em,$brand-color , $grey-dark);
 
 // External libraries
 @import "bootstrap-sprockets";
@@ -55,4 +58,8 @@ a:hover {
 
 body {
   padding-top: $nav-bar-height;
+}
+
+.row {
+  margin-right: 0;
 }
