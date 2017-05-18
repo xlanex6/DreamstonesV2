@@ -1,0 +1,9 @@
+deployment:
+  production:
+    branch: master
+    heroku:
+      appname: dreamstonesv2
+    commands:
+      - git push git@heroku.com:dreamstonesv2.git $CIRCLE_SHA1:master
+      - heroku run rake db:migrate --app dreamstonesv2
+      - heroku restart

@@ -33,16 +33,27 @@ gem 'intercom-rails'
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
-  gem "rails-erd"
+  gem 'rspec-rails', '~> 3.6'
+  gem 'factory_girl_rails', '~> 4.8'
+  gem 'faker', '~> 1.7', '>= 1.7.3'
+  gem 'guard-rspec', '~> 4.7', '>= 4.7.3'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
+  gem 'browser_sync_rails'
   gem 'listen', '~> 3.0.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'browser_sync_rails'
 end
 
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+end
+
+group :test do
+  gem 'capybara', '~> 2.14'
+  gem 'database_cleaner', '~> 1.6'
+  gem 'launchy', '~> 2.4', '>= 2.4.3'
+  gem 'selenium-webdriver', '~> 3.4'
+
 end
