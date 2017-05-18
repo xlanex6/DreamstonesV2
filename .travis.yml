@@ -1,0 +1,10 @@
+deploy:
+  provider: heroku
+  api_key:
+    secure: ILOfwl70D1tjgjflIW4n0u0kXaf9PXxuj0Lm5ItPw0hWr2zW8LGa+t91gGGkhe9m9U02w9Yalypq9+BrdnhaBLqEV6PvE9u9XXMAC173MQ2BPknlZnnyLgPF5HVq0sTozpK9asefRzZNGd7UYwL4r5o0xJl21d1H/mNQ3kgjpNy8rNxva/OeCSaU49AA8rSPF/LjzzkjIw7v5BwjRm6kHWRT0/XeC3l5jEI1Q+FhkXnnJeoeYa+p60xf2yK4+n6aJsOHhjjy1oNPCWJn3BkVi33GrV56eDhUtyNh9lizrLbwYEp/GhOcZ4C/GCuM+EQVVJ0bDDgeKWgIYHSKLs3m9p0iU99iwH4BVk4Hv7D339RS+VxXy1BKU2QeD2qltdIY/jWGMA4FJz56x+HmvIT0hp46m/DkHmOMv7pJTxSoUeYClmoRiZZsJCeF1FxhcVBzrOrqaz38GhxeoSNt/CwkMjHp/O/FTG9AIeMRk2MiEE5BhpoDV7j/H4CdOBO9rsdjZlPNDERUNz3T7qj3mYVRdSzcEBXDQUtBxdXFEjJbWL0HbjBWnKm35haC/8euyX4kuA9WIc3nqjjOLnJf1g7zu/P/epk3/O6OQEun3G/1bdRhI4Sx1JQVw26CqyRoS3gj8YWXj+QrDJ2RXV6ktwRuriJ8n400u5dbf+y7Wxec5mI=
+  app: dreamstonesv2
+  on: master
+  run:
+    - "rake db:migrate"
+    - restart
+    - "rake cleanup"
