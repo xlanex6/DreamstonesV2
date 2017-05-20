@@ -49,9 +49,10 @@ en:
   media_partners: In association with
 
 ## pre_modal ##
-  pre_modal_text: Check if my project is eligible to Dreamstones step by step process
-  pre_modal_btn: Get my project timeline
-  pre_modal_btn_landing: Get Dreamstones help
+  pre_modal_text: Check the feasibility and the cost of my project
+  pre_modal_btn: Get an estimate
+
+  pre_modal_btn_landing: Get an estimate
 
   modal_form_h: Ask if we can help
   modal_form_content: Not all building projects need to follow our process. Some projects are too simple for our process to be beneficial, some others must follow our process to avoid any difficulties and increased costs.
