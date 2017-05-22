@@ -3,28 +3,6 @@
  * (margin/padding adjustments)
  * ------------------------------------- */
 
- .home-features{
-   background-color: $grey-dark;
-   margin-top: 15px;
- }
- .home-feature {
-   padding-top: 20px;
-   padding-bottom: 20px;
-   h3 {
-     color: $brand-color;
-     font-weight: bold;
-     letter-spacing: 0.62px;
-
-   }
-   p {
-     color: $grey-light;
-   }
-   .icon {
-     height: 50px;
-   }
- }
-
-
  .home-icon h3 {
    font-family: $header-font;
    font-weight: bold;

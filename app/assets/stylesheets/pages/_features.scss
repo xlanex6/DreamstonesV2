@@ -1,0 +1,44 @@
+.wrapper-features {
+  background: url('feature-bg.png');
+  background-repeat: repeat;
+}
+
+.features{
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.feature {
+  text-align: center;
+  height: 100%;
+  h3 {
+    color: white;
+    font-family: $header-font;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+
+  }
+  .feature-text {
+    margin: auto;
+    width: 320px;
+  }
+  p {
+    color: white;
+    text-align: justify;
+    font-family: $base-font;
+    font-size: $base-size;
+    line-height: 22px;
+    font-weight: lighter;
+
+  }
+  .icon {
+    width: 150px;
+    margin: auto;
+    border-bottom: 5px solid $brand-color;
+    img {
+      padding-bottom: 20px;
+
+    }
+  }
+}

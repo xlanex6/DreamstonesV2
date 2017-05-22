@@ -17,23 +17,16 @@ en:
   home_p4: Get in touch in order to see if your project qualifies for Dreamstones' design and build process.
 
 
-  home_feature_title1: QUALITY
-  home_feature_p1: |
-    10 years warranty</br>
-    Fully compliant
-  home_feature_title2: SIMPLICITY
-  home_feature_p2: |
-    One stop shop</br>
-    Support 7 days a week
-  home_feature_title3: COST
-  home_feature_p3: |
-    Local market price</br>
-    Always on budget
-  home_feature_title4: TRUST
-  home_feature_p4: |
-    100+ customers satisfied</br>
-    Head office in th UK
-
+  home_feature_title1: EXPERIENCE
+  home_feature_p1: Our team has been involved in 100+ projects ranging from small flat renovations to major new build developments.
+  home_feature_title2: SUPPORT
+  home_feature_p2: Our team is attentive to our clients' tastes and needs and help them through all aspects of their project, even administrative tasks.
+  home_feature_title3: INNOVATION
+  home_feature_p3: We use the latest technology including 3D-modelling and video conversation softwares to communicate easily and efficiently.
+  home_feature_title4: ARCHITECTURE
+  home_feature_p4: Our team is highly qualified and composed of both architects and French projects managers to turn your ideas into a reality.
+  home_feature_title5: NETWORK
+  home_feature_p5: We have a strong network of trusted local trades selected to comply with our quality standards and work in close relationship with planning departments.
 
 ## nav bar ##
 
