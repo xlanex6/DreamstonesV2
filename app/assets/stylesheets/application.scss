@@ -63,3 +63,13 @@ body {
 .row {
   margin-right: 0;
 }
+
+.brand-name {
+  font-family: $header-font;
+  color: $grey-dark;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
