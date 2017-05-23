@@ -33,28 +33,33 @@
 
 <%= render 'shared/single-point-contact' %>
 <%= render 'shared/home-features' %>
-<div class="container">
-  <div class="row">
-    <div class="lastest-project-cards">
-      <h3><%= t(:last_project) %></h3>
-      <% @portofolios.each do |last_project| %>
-        <%= render partial: "shared/last-projects", locals: {last_project: last_project} %>
-      <% end %>
+
+
+<div class="wrapper-light-icon">
+  <div class="container">
+    <%= render 'shared/faq' %>
+    <div class="row">
+      <div class="lastest-project-cards">
+        <h3><%= t(:last_project) %></h3>
+        <% @portofolios.each do |last_project| %>
+          <%= render partial: "shared/last-projects", locals: {last_project: last_project} %>
+        <% end %>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <h3 class="text-center"><%= t(:testomial_project_title) %></h3>
-    <% @testimonials.each do |testimonial|  %>
-      <div class="col-xs-12 col-md-6">
-        <div class="testi-card">
-          <div class="testi-card-content">
-            <p>"<%= testimonial.text %>"</p>
-          </div>
-          <div class="testi-card-name">
-            <h3><%= testimonial.author %></h3>
+    <div class="row">
+      <h3 class="text-center"><%= t(:testomial_project_title) %></h3>
+      <% @testimonials.each do |testimonial|  %>
+        <div class="col-xs-12 col-md-6">
+          <div class="testi-card">
+            <div class="testi-card-content">
+              <p>"<%= testimonial.text %>"</p>
+            </div>
+            <div class="testi-card-name">
+              <h3><%= testimonial.author %></h3>
+            </div>
           </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
