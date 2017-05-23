@@ -1,13 +1,14 @@
 .faq-title {
   text-align: center;
   margin: 40px 0;
+  color: $grey-dark;
 }
 
 .faq {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-
+  margin-bottom: 40px;
 }
 
 .faq-item {
@@ -19,7 +20,7 @@
 .faq-item-question {
   background-color: $grey-dark;
   border-radius: 8px;
-  padding: 8px 5px;
+  padding: 8px 12px;
   text-align: right;
   color: $grey-light;
   font-size: 20px;
