@@ -51,3 +51,23 @@
     text-align: justify;
   }
 }
+
+.project-pictures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+.project-picture {
+  height: 300px;
+  width: 640px;
+  background-size: cover;
+  img {
+  }
+  border-radius: 8px;
+  border: 8px solid $brand-color;
+
+}
+.project-picture-margin-corect {
+  margin-right: -8px;
+}
