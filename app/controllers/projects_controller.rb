@@ -7,7 +7,6 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @testimonials = Testimonial.limit(2).order('RANDOM()')
     @portofolios = Portofolio.order(portofolio_order: :asc).last(3)
     speed_optimisation(@project)
   end

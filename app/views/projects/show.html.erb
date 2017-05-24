@@ -34,20 +34,18 @@
 <%= render 'shared/single-point-contact' %>
 <%= render 'shared/home-features' %>
 
-<% if @project.pictures? %>
-<div class="row">
-  <div class="project-pictures">
-    <div class="project-picture" style="background-image: url(<%= @project.pictures.first.fullpath%>)">
-
-    </div>
-    <div class="project-picture project-picture-margin-corect" style="background-image: url(<%= @project.pictures.second.fullpath%>)">
-    <%= image_tag 'unique-central.png' %>
-    </div>
-  </div>
-</div>
-<% end %>
 
 <div class="wrapper-light-icon">
+  <% if @project.pictures? %>
+  <div class="row">
+    <div class="project-pictures">
+      <div class="project-picture" style="background-image: url(<%= @project.pictures.first.fullpath%>)">
+      </div>
+      <div class="project-picture project-picture-margin-corect" style="background-image: url(<%= @project.pictures.second.fullpath%>)">
+      </div>
+    </div>
+  </div>
+  <% end %>
   <div class="container">
     <%= render 'shared/faq' %>
     <div class="row">
