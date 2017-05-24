@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170406111820) do
+ActiveRecord::Schema.define(version: 20170524071851) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -72,11 +72,12 @@ ActiveRecord::Schema.define(version: 20170406111820) do
     t.boolean  "renovation", default: false
     t.boolean  "extension",  default: false
     t.boolean  "prestige",   default: false
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
     t.text     "text"
     t.string   "slug"
     t.boolean  "homepage",   default: false
+    t.string   "category",   default: "Renovation"
     t.index ["slug"], name: "index_projects_on_slug", unique: true, using: :btree
   end
 

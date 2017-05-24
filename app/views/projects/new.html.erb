@@ -4,10 +4,11 @@
     <%= simple_form_for @project , url: projects_path, method: :post do |f| %>
       <%= f.input :title %>
       <%= f.input :text, as: :text%>
-      <%= f.input :new_buid, as: :boolean%>
+      <%= f.input :category, collection: ['New build', 'Renovation', 'Extention']%>
+      <!-- <%= f.input :new_buid, as: :boolean%>
       <%= f.input :renovation, as: :boolean %>
       <%= f.input :extension, as: :boolean %>
-      <%= f.input :prestige, as: :boolean %>
+      <%= f.input :prestige, as: :boolean %> -->
       <%= f.input :photo, as: :attachinary %>
       <%= f.input :homepage, as: :boolean %>
 

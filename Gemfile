@@ -20,7 +20,7 @@ gem 'autoprefixer-rails'
 gem 'devise-i18n'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
-gem 'cloudinary', '1.1.0'
+gem 'cloudinary', '1.1.7'
 gem "attachinary", github: "assembler/attachinary"
 gem "jquery-fileupload-rails"
 gem "coffee-rails"

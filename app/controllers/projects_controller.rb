@@ -48,6 +48,7 @@ class ProjectsController < ApplicationController
     params.require(:project).permit(:title,
                                     :text,
                                     :photo,
+                                    :category,
                                     :new_buid,
                                     :renovate,
                                     :extension,
