@@ -18,34 +18,32 @@
         <p><%= @project.category %> PROJECT</p>
       </div>
       <div class="project-text-content">
-        <h2>Your <%= @project.title %> project in France</h2>
+        <h2>Your <span class="lowercase"><%= @project.title %></span> project in France</h2>
         <p><%= simple_format(@project.text) %></p>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6">
       <div class="project-text-form text-center">
-<div class="typeform-widget" data-url="https://dreamstones.typeform.com/to/BrA63A" style="width: 100%; height: 550px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-
+        <div class="typeform-hide hidden"></div>
+        <div class="typeform-widget" data-url="https://dreamstones.typeform.com/to/BrA63A" style="width: 100%; height: 600px;" ></div>
       </div>
     </div>
   </div>
 </div>
 
-<%= render 'shared/single-point-contact' %>
-<%= render 'shared/home-features' %>
-
-
-<div class="wrapper-light-icon">
-  <% if @project.pictures? %>
+<% if @project.pictures? %>
   <div class="row">
-    <div class="project-pictures">
-      <div class="project-picture" style="background-image: url(<%= @project.pictures.first.fullpath%>)">
-      </div>
-      <div class="project-picture project-picture-margin-corect" style="background-image: url(<%= @project.pictures.second.fullpath%>)">
-      </div>
+  <div class="project-pictures">
+    <div class="project-picture project-picture-left" style="background-image: url(<%= @project.pictures.first.fullpath%>)">
+    </div>
+    <div class="project-picture project-picture-right" style="background-image: url(<%= @project.pictures.second.fullpath%>)">
     </div>
   </div>
-  <% end %>
+</div>
+<% end %>
+<%= render 'shared/single-point-contact' %>
+<%= render 'shared/home-features' %>
+<div class="wrapper-light-icon">
   <div class="container">
     <%= render 'shared/faq' %>
     <div class="row">
@@ -83,7 +81,8 @@
   </div>
 
 </div>
-
+<%= render 'shared/media-partners' %>
     </div>
   </div>
 </div>
+<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>

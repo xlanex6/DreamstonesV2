@@ -18,6 +18,16 @@
 
 }
 
+.typeform-hide {
+  height: 43px;
+  width: 143px;
+  position: absolute;
+  background-color: #5B5B5B;
+  z-index: 99;
+  top: 549px;
+  left: 282px;
+}
+
 .project-type  {
   position: relative;
   p {
@@ -65,10 +75,19 @@
   background-position: center;
   img {
   }
-  border-radius: 8px;
-  border: 8px solid $brand-color;
+  border-top: 8px solid $brand-color;
+  border-bottom: 8px solid $brand-color;
+}
+
+.project-picture-right {
+  border-left: 8px solid $brand-color;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 
 }
-.project-picture-margin-corect {
-  margin-right: -8px;
+.project-picture-left {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right: 8px solid $brand-color;
+
 }
