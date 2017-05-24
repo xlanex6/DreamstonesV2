@@ -1,10 +1,10 @@
 <% content_for :meta_title, "Architect & builders for #{@project.title.downcase} project" %>
 <% content_for :meta_description, @project.text %>
-<% content_for :meta_image, @project.photo.path %>
+<% content_for :meta_image, @project.photo.path if @project.photo? %>
 <% content_for :robots, 'index, follow' %>
 
 <div class="banner banner-project-show"
-  style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url( <%= @project.photo.fullpath%> );">
+  style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url( '<%= @project.photo.fullpath if @project.photo?  %>' );">
   <div class="banner-content">
     <h1>Architects & Builders</br>for your <span class="project-show-title"><%= @project.title.downcase %></span> project</h1>
   </div>
@@ -14,7 +14,6 @@
   <div class="row">
     <div class="col-xs-12 col-sm-6">
       <div class="project-type">
-        <!-- <%= image_tag "renovation-project.png"%> -->
         <%= image_tag "#{icon_category(@project.category)}-home.png" , class: 'logo-project-type'%>
         <p><%= @project.category %> PROJECT</p>
       </div>
