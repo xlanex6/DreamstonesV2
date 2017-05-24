@@ -1,6 +1,6 @@
 class PortofoliosController < ApplicationController
-  before_action :set_portofolio, only: [:edit, :update]
-  skip_before_action :authenticate_user!, only:  [:index]
+  before_action :set_portofolio, only: %i[edit update]
+  skip_before_action :authenticate_user!, only: %i[index]
 
   def index
     @portofolios = Portofolio.last(2)
@@ -12,19 +12,19 @@ class PortofoliosController < ApplicationController
 
   def create
     @portofolio = Portofolio.new(portofolio_params)
-      if @portofolio.save
-        redirect_to root_path, notice: "Your latest project has been succefully added"
-      else
-        render :new
-      end
+    if @portofolio.save
+      redirect_to root_path, notice: 'Your latest project has been succefully added'
+    else
+      render :new
+    end
   end
 
   def update
-      if @portofolio.update(portofolio_params)
-        redirect_to root_path, notice: "Your latest project has been succefully updated"
-      else
-        render :edit
-      end
+    if @portofolio.update(portofolio_params)
+      redirect_to root_path, notice: 'Your latest project has been succefully updated'
+    else
+      render :edit
+    end
   end
 
   private
@@ -40,7 +40,5 @@ class PortofoliosController < ApplicationController
                                         :category,
                                         :size,
                                         photos: [])
-
   end
-
 end

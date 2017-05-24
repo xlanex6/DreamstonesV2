@@ -14,7 +14,8 @@
   <div class="row">
     <div class="col-xs-12 col-sm-6">
       <div class="project-type">
-        <%= image_tag "renovation-project.png"%>
+        <!-- <%= image_tag "renovation-project.png"%> -->
+        <%= image_tag "#{icon_category(@project.category)}-home.png" , class: 'logo-project-type'%>
         <p><%= @project.category %> PROJECT</p>
       </div>
       <div class="project-text-content">
