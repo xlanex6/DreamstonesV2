@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="col-xs-12 col-sm-6">
-      <div class="project-text-form text-center">
+      <div class="project-text-form text-center" id='form'>
         <div class="typeform-hide hidden"></div>
         <div class="typeform-widget" data-url="https://dreamstones.typeform.com/to/BrA63A" style="width: 100%; height: 600px;" ></div>
       </div>
@@ -57,32 +57,33 @@
     <div class="row">
       <h3 class="text-center"><%= t(:testomial_project_title) %></h3>
 
-<div class="new-testomonial">
-  <div class="testi-card testi-featured">
-            <div class="testi-card-content ">
-              <p>"We worked with Dreamstones and this proved ideal as the house we ended up buying was in need of total renovation. If we hadn't had the expertise and shared vision of Dreamstones, we would not have bought our farmhouse. Subsequently, we worked over several months finalising plans and designs, in great detail, to transform a dark lair of a place into something full of light and air. Dreamstones kept us up to speed on every nuance with frequent email and photo updates to ensure we were comfortable with the progress. This care and attention to detail coupled with their experience meant, by August 2015, we had the home of our dreams in Southern France."</p>
-            </div>
-            <div class="testi-card-name">
-              <h3>David & Katie</h3>
-            </div>
-            <div class="testi-photos">
-                <%= image_tag 'katie.png', class: 'image-circle image-border-light' %>
-                <%= image_tag 'david.png', class: 'image-circle image-border-light' %>
-            </div>
+      <div class="new-testomonial">
+        <div class="testi-card testi-featured">
+                  <div class="testi-card-content ">
+                    <p>"We worked with Dreamstones and this proved ideal as the house we ended up buying was in need of total renovation. If we hadn't had the expertise and shared vision of Dreamstones, we would not have bought our farmhouse. Subsequently, we worked over several months finalising plans and designs, in great detail, to transform a dark lair of a place into something full of light and air. Dreamstones kept us up to speed on every nuance with frequent email and photo updates to ensure we were comfortable with the progress. This care and attention to detail coupled with their experience meant, by August 2015, we had the home of our dreams in Southern France."</p>
+                  </div>
+                  <div class="testi-card-name">
+                    <h3>David & Katie</h3>
+                  </div>
+                  <div class="testi-photos">
+                      <%= image_tag 'katie.png', class: 'image-circle image-border-light' %>
+                      <%= image_tag 'david.png', class: 'image-circle image-border-light' %>
+                  </div>
 
+              </div>
+        <div class="testi-card-connection">
+      <%= image_tag 'testi-renovation.png' %>
         </div>
-  <div class="testi-card-connection">
-<%= image_tag 'testi-renovation.png' %>
-  </div>
-  <div class="testi-card-video">
-    <div class="flex-video">
-      <iframe width="450" height="315"src="https://www.youtube.com/embed/ObUcj1pCgrg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
+        <div class="testi-card-video">
+          <div class="flex-video">
+            <iframe width="450" height="315"src="https://www.youtube.com/embed/ObUcj1pCgrg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
 
-</div>
+      </div>
 <%= render 'shared/media-partners' %>
     </div>
   </div>
 </div>
+<%= render 'shared/project-link-form' %>
 <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
