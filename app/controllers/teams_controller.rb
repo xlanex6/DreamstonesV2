@@ -4,7 +4,7 @@ class TeamsController < ApplicationController
   def index
     @site_team = Team.where('team_type = ?', 'Site-Manager').order(:team_order)
     @hq_team = Team.where('team_type = ?', 'Head-Office').order(:team_order)
-    @trades = YAML.load_file('#{Rails.root}/config/data/trades.yml')
+    @trades = YAML.load_file('./config/data/trades.yml')
   end
 
   def new
