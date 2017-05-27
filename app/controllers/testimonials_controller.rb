@@ -1,5 +1,5 @@
 class TestimonialsController < ApplicationController
-skip_before_action :authenticate_user!, only: [:index]
+  skip_before_action :authenticate_user!, only: %i[index]
 
   def index
     @testimonials = Testimonial.all
@@ -12,7 +12,7 @@ skip_before_action :authenticate_user!, only: [:index]
   def create
     @testimonial = Testimonial.new(testimonial_params)
     if @testimonial.save
-      redirect_to testimonials_path, notice: "Your testimonial has been succefully added"
+      redirect_to testimonials_path, notice: 'Your testimonial has been succefully added'
     else
       render :new
     end

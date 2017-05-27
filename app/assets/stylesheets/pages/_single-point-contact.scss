@@ -1,0 +1,15 @@
+.single-point {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 35px;
+
+  .single-point-title h3{
+    font-family: $header-font;
+    color: $grey-dark;
+    font-size: 23px;
+    line-height: 25px;
+  }
+}

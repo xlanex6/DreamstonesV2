@@ -17,23 +17,16 @@ en:
   home_p4: Get in touch in order to see if your project qualifies for Dreamstones' design and build process.
 
 
-  home_feature_title1: QUALITY
-  home_feature_p1: |
-    10 years warranty</br>
-    Fully compliant
-  home_feature_title2: SIMPLICITY
-  home_feature_p2: |
-    One stop shop</br>
-    Support 7 days a week
-  home_feature_title3: COST
-  home_feature_p3: |
-    Local market price</br>
-    Always on budget
-  home_feature_title4: TRUST
-  home_feature_p4: |
-    100+ customers satisfied</br>
-    Head office in th UK
-
+  home_feature_title1: EXPERIENCE
+  home_feature_p1: Our team has been involved in 100+ projects ranging from small flat renovations to major new build developments.
+  home_feature_title2: SUPPORT
+  home_feature_p2: Our team is attentive to our clients' tastes and needs and help them through all aspects of their project, even administrative tasks.
+  home_feature_title3: INNOVATION
+  home_feature_p3: We use the latest technology including 3D-modelling and video conversation softwares to communicate easily and efficiently.
+  home_feature_title4: ARCHITECTURE
+  home_feature_p4: Our team is highly qualified and composed of both architects and French project managers to turn your ideas into a reality.
+  home_feature_title5: NETWORK
+  home_feature_p5: We have a strong network of trusted local trades selected to comply with our quality standards and work in close relationship with planning departments.
 
 ## nav bar ##
 
@@ -48,11 +41,30 @@ en:
 
   media_partners: In association with
 
-## pre_modal ##
-  pre_modal_text: Check the feasibility and the cost of my project
-  pre_modal_btn: Get an estimate
 
-  pre_modal_btn_landing: Get an estimate
+## FAQ
+
+  faq_q1: Where are you based ?
+  faq_a1: Our design and project management team is english-speaking and based in the UK, at our head office in Glasgow city centre, this to be close to our clients. Our site managers are based in different parts of France, to be close to our clients’ projects. Finally our sales representatives travel everywhere in the UK and in France to meet with our new clients.
+  faq_q2: Do you assist with purchase ?
+  faq_a2: We often are involved during the purchase and work in collaboration with legal advisors, free of charge, to ensure our clients only commit when all uncertainties have been cleared.
+  faq_q3: Do you advise on plots and properties ?
+  faq_a3: We do advise our clients prior to them purchasing a plot or property by checking the latest and soon to come local planning regulations. We also carry inspections to assess the condition of a property and estimate the cost of the building work.
+  faq_q4: Do you deal with planning application ?
+  faq_a4: Yes, we do. We work in close relationship with planning departments and also submit our clients projects for pre-approval allowing us to reduce the risk of refusal and promote challenging ideas complying to the regulations in place.
+  faq_q5: Where do you operate in France ?
+  faq_a5: Everywhere as long as the project is worth considering by our team (more than a fresh coat of paint). We have already done projects in Normandy, Brittany, Loire, Aquitaine, Poitou, Dordogne, Centre, Pyrenees, Languedoc, French Riviera, Provence, Alps, Burgundy and Champagne.
+  faq_a6: We offer a 10 year warranty on building works and therefore take full responsibility for your project from the design until the completion.
+  faq_q6: Do you offer a warranty ?
+  faq_q7: How do you carry the building work ?
+  faq_a7: We are main contractors and work with a large network of local trusted trades strictly selected to comply with our quality standards. We also have our own French site managers in charge of operations during the build phase. Our clients are updated regularly with progress reports and site pictures.
+  faq_q8: What type of project do you undertake ?
+  faq_a8: Any type of new build, renovation or extension as long as building work includes more than a fresh coat of paint.
+
+  ## pre_modal ##
+  pre_modal_text: Check if my project is eligible to Dreamstones step by step process
+  pre_modal_btn: Get my project timeline
+  pre_modal_btn_landing: Get Dreamstones help
 
   modal_form_h: Ask if we can help
   modal_form_content: Not all building projects need to follow our process. Some projects are too simple for our process to be beneficial, some others must follow our process to avoid any difficulties and increased costs.
@@ -91,13 +103,6 @@ en:
 
   process_title5: Project feasibility assessment
   process_content5: This is where the sensible evaluation of the project characteristics takes place assessing the results of the survey and the gross estimate. Other important factors are taken into account including the local authorities recommendation for planning approval as well as the desired timeline for the project to be completed. When all boxes are ticked it is time to move onto the design phase.
-
-
-
-
-
-
-
 
 
 ## design ##

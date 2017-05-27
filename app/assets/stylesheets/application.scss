@@ -34,6 +34,11 @@ a:hover {
   background-position: center;
 }
 
+.wrapper-light-icon {
+  background: url('icon-bg-light.png');
+  background-repeat: repeat;
+}
+
 .img-top-pad {
   margin-top: 30px;
 }
@@ -62,4 +67,18 @@ body {
 
 .row {
   margin-right: 0;
+}
+
+.brand-name {
+  font-family: $header-font;
+  color: $grey-dark;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }

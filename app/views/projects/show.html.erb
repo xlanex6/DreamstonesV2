@@ -1,59 +1,89 @@
 <% content_for :meta_title, "Architect & builders for #{@project.title.downcase} project" %>
 <% content_for :meta_description, @project.text %>
-<% content_for :meta_image, @project.photo.path %>
+<% content_for :meta_image, @project.photo.path if @project.photo? %>
 <% content_for :robots, 'index, follow' %>
 
-<div class="banner banner-project"
-  style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url( <%= asset_path('sk2real.jpg')%> );">
+<div class="banner banner-project-show"
+  style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url( '<%= @project.photo.fullpath if @project.photo?  %>' );">
   <div class="banner-content">
-    <h1>Architects & Builders</br>for your <%= @project.title.downcase %> project</h1>
+    <h1>Architects & Builders</br>for your <span class="project-show-title"><%= @project.title.downcase %></span> project</h1>
   </div>
 </div>
-
-
 
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-6">
+      <div class="project-type">
+        <%= image_tag "#{icon_category(@project.category)}-home.png" , class: 'logo-project-type'%>
+        <p><%= @project.category %> PROJECT</p>
+      </div>
       <div class="project-text-content">
-        <h2><%= @project.title %></h2>
+        <h2>Your <span class="lowercase"><%= @project.title %></span> project in France</h2>
         <p><%= simple_format(@project.text) %></p>
-          <%= link_to t(:pre_modal_btn_landing),"https://dreamstones.typeform.com/to/Tf4mZY", id: "typef_orm_share", data: { mode: "popup" }, target:"_blank", class:"typeform-share ds-btn btn-orange" %>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6">
-      <div class="project-text-picture text-center">
-      <%= image_tag "projects/process-project-web.png" %>
-      <%= cl_image_tag @project.photo.path, height: 350, width: 550, crop: :fill, class:"img-top-pad", alt: "Architect & builder for #{@project.title.downcase}"%>
-
+      <div class="project-text-form text-center" id='form'>
+        <div class="typeform-hide hidden"></div>
+        <div class="typeform-widget" data-url="https://dreamstones.typeform.com/to/BrA63A" style="width: 100%; height: 600px;" ></div>
       </div>
     </div>
   </div>
 </div>
-<%= render 'shared/simple-process-light' %>
-<%= render 'shared/home-features' %>
-<div class="container">
+
+<% if @project.pictures? %>
   <div class="row">
-    <div class="lastest-project-cards">
-      <h3><%= t(:last_project) %></h3>
-      <% @portofolios.each do |last_project| %>
-        <%= render partial: "shared/last-projects", locals: {last_project: last_project} %>
-      <% end %>
+  <div class="project-pictures">
+    <div class="project-picture project-picture-left" style="background-image: url(<%= @project.pictures.first.fullpath%>)">
+    </div>
+    <div class="project-picture project-picture-right" style="background-image: url(<%= @project.pictures.second.fullpath%>)">
     </div>
   </div>
-  <div class="row">
-    <h3 class="text-center"><%= t(:testomial_project_title) %></h3>
-    <% @testimonials.each do |testimonial|  %>
-      <div class="col-xs-12 col-md-6">
-        <div class="testi-card">
-          <div class="testi-card-content">
-            <p>"<%= testimonial.text %>"</p>
-          </div>
-          <div class="testi-card-name">
-            <h3><%= testimonial.author %></h3>
+</div>
+<% end %>
+<%= render 'shared/single-point-contact' %>
+<%= render 'shared/home-features' %>
+<div class="wrapper-light-icon">
+  <div class="container">
+    <%= render 'shared/faq' %>
+    <div class="row">
+      <div class="lastest-project-cards">
+        <h3><%= t(:last_project) %></h3>
+        <% @portofolios.each do |last_project| %>
+          <%= render partial: "shared/last-projects", locals: {last_project: last_project} %>
+        <% end %>
+      </div>
+    </div>
+    <div class="row">
+      <h3 class="text-center"><%= t(:testomial_project_title) %></h3>
+
+      <div class="new-testomonial">
+        <div class="testi-card testi-featured">
+                  <div class="testi-card-content ">
+                    <p>"We worked with Dreamstones and this proved ideal as the house we ended up buying was in need of total renovation. If we hadn't had the expertise and shared vision of Dreamstones, we would not have bought our farmhouse. Subsequently, we worked over several months finalising plans and designs, in great detail, to transform a dark lair of a place into something full of light and air. Dreamstones kept us up to speed on every nuance with frequent email and photo updates to ensure we were comfortable with the progress. This care and attention to detail coupled with their experience meant, by August 2015, we had the home of our dreams in Southern France."</p>
+                  </div>
+                  <div class="testi-card-name">
+                    <h3>David & Katie</h3>
+                  </div>
+                  <div class="testi-photos">
+                      <%= image_tag 'katie.png', class: 'image-circle image-border-light' %>
+                      <%= image_tag 'david.png', class: 'image-circle image-border-light' %>
+                  </div>
+
+              </div>
+        <div class="testi-card-connection">
+      <%= image_tag 'testi-renovation.png' %>
+        </div>
+        <div class="testi-card-video">
+          <div class="flex-video">
+            <iframe width="450" height="315"src="https://www.youtube.com/embed/ObUcj1pCgrg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
+
       </div>
-    <% end %>
+<%= render 'shared/media-partners' %>
+    </div>
   </div>
 </div>
+<%= render 'shared/project-link-form' %>
+<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>

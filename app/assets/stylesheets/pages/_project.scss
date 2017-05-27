@@ -1,16 +1,94 @@
-.project-text-picture {
-  position: relative;
-  top: -40px;
+.banner-project-show {
+  height: 70vh;
+  background-position: center;
+  h1 {
+    color: white;
+  }
+}
 
+.project-show-title {
+  color: $brand-color;
+}
+
+.project-text-form {
+  position: relative;
+  top: -10vh;
+  border: 5px solid $brand-color;
+  border-radius: 8px;
+
+}
+
+.typeform-hide {
+  height: 43px;
+  width: 143px;
+  position: absolute;
+  background-color: #5B5B5B;
+  z-index: 99;
+  top: 549px;
+  left: 282px;
+}
+
+.project-type  {
+  position: relative;
+  p {
+    color: #4A4A4A;
+    font-size: 27px;
+    font-family:$header-font;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 33px;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 123px;
+    text-transform: uppercase;
+
+  }
+  img {
+    position: absolute;
+    top: -14vh;
+    left: -10vw;
+    height: 200px;
+  }
 }
 
 .project-text-content {
   h2 {
     text-align: center;
     margin-top: 60px;
-
+    margin-bottom: 40px;
   }
   p {
     text-align: justify;
   }
+}
+
+.project-pictures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+}
+.project-picture {
+  height: 300px;
+  width: 640px;
+  background-size: cover;
+  background-position: center;
+  img {
+  }
+  border-top: 8px solid $brand-color;
+  border-bottom: 8px solid $brand-color;
+}
+
+.project-picture-right {
+  border-left: 8px solid $brand-color;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+}
+.project-picture-left {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right: 8px solid $brand-color;
+
 }

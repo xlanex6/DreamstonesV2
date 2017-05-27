@@ -58,3 +58,25 @@ letter-spacing: 2.91px;
   padding-bottom: 15px;
   text-align: center;
 }
+
+.testi-featured {
+  width: 450px;
+
+}
+
+.testi-photos {
+  background-color: $grey-dark;
+  img {
+    height: 80px;
+  }
+}
+
+
+.new-testomonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testi-card-connection {
+}
