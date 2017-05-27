@@ -80,3 +80,12 @@ letter-spacing: 2.91px;
 
 .testi-card-connection {
 }
+
+@media (max-width: $screen-sm-max)  {
+  .new-testomonial {
+    flex-direction: column;
+  }
+  .testi-card-connection {
+    display: none;
+  }
+}

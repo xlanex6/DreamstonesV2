@@ -18,6 +18,12 @@
 
 }
 
+@media (max-width: $screen-xs-max) {
+  .project-text-form {
+    top: 0
+  }
+}
+
 .typeform-hide {
   height: 43px;
   width: 143px;
@@ -47,7 +53,14 @@
     position: absolute;
     top: -14vh;
     left: -10vw;
-    height: 200px;
+    width: 21vw;
+    max-width: 200px;
+    min-width: 140px;
+  }
+  @media (max-width: $screen-xs-max) {
+    img{
+      top: -70px
+    }
   }
 }
 
