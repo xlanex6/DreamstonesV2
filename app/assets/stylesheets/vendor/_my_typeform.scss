@@ -1,0 +1,20 @@
+#my_typeform {
+  display: inline-block;
+  width: 100%;
+  height: 600px;
+}
+
+.mobile-form {
+  width: 100%;
+  height: 100%;
+  background: url('feature-bg.png');
+  background-repeat: repeat;
+  border-radius: 8px;
+  border: 5px solid $brand-color;
+  text-align: center;
+  color: $brand-color;
+  padding: 1em 1em;
+  p {
+    text-shadow: 1px 1px 5px #000;
+  }
+}
