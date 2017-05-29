@@ -39,7 +39,6 @@
   </div>
   <div class="team">
     <div class="col-md-8">
-      <h3><%= t(:team_france1) %></h3>
       <!-- <div class="team-cards">
         <% @site_team.each do |site_team_member| %>
         <div class="team-card">
@@ -52,20 +51,37 @@
         </div>
         <% end %>
       </div> -->
-      <div class="team-fr">
-        <div class="team-fr-item">
-          <%= image_tag "trades/sitemanagers" %>
-          Site-Manager
-        </div>
-      </div>
       <h3><%= t(:team_france2) %></h3>
       <div class="team-fr">
         <% @trades['engineer'].each do |trade| %>
-          <div class="team-fr-item">
-            <%= image_tag "#{trade['picture']}" %>
-            <%= simple_format(trade['name'])%>
-          </div>
+        <div class="team-fr-item">
+          <%= image_tag "#{trade['picture']}" %>
+          <%= simple_format(trade['name'])%>
+        </div>
         <% end %>
+      </div>
+      <h3><%= t(:team_france1) %></h3>
+      <div class="team-fr">
+        <div class="team-fr-item">
+          <%= image_tag "trades/sitemanagers" %>
+          Site-Manager <br>in the Alps
+        </div>
+        <div class="team-fr-item">
+          <%= image_tag "trades/sitemanagers" %>
+          Site-Manager <br>in Provence
+        </div>
+        <div class="team-fr-item">
+          <%= image_tag "trades/sitemanagers" %>
+          Site-Manager <br>in Dordogne
+        </div>
+        <div class="team-fr-item">
+          <%= image_tag "trades/sitemanagers" %>
+          Site-Manager <br>in French Riviera
+        </div>
+        <div class="team-fr-item">
+          <%= image_tag "trades/sitemanagers" %>
+          Site-Manager <br>in Languedoc
+        </div>
       </div>
       <h3><%= t(:team_france3) %></h3>
       <div class="team-fr">
