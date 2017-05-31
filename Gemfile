@@ -27,7 +27,6 @@ gem "coffee-rails"
 gem 'friendly_id', '~> 5.1.0'
 gem 'sitemap_generator'
 gem 'forest_liana'
-gem 'intercom-rails'
 
 
 group :development, :test do
