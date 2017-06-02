@@ -27,11 +27,10 @@ a:hover {
 }
 
 .wrapper-dark {
-  background-color: $grey-dark;
+  @extend .bg-gradient-dark;
 }
 .wrapper-footer {
-  background: url('navbar-bg.png');
-  background-position: center;
+  @extend .bg-gradient-light;
 }
 
 .wrapper-light-icon {
@@ -60,7 +59,7 @@ a:hover {
 }
 
 body {
-  padding-top: $nav-bar-height;
+  margin-top: $nav-bar-height;
 }
 
 .row {

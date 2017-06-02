@@ -1,44 +1,44 @@
 // Your footer style
 .footer {
+  color: $grey-dark;
   margin-top: 30px;
-  background: url('navbar-bg.png');
-  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
 
   .footer-item {
-
+    flex: 0 0 200px;
+    padding-bottom: 20px;
+    text-align: left;
   }
 
   h3 {
-    text-align: center;
+    color: $grey-dark-darken;
     font-family: $header-font;
-    color: $grey-light;
     margin-top: 0;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   p {
-    color: $grey-light;
-    text-align: center;
     font-size: 12px;
+    :hover {
+      opacity: 0.7;
+    }
   }
   a {
     text-decoration: none;
-    color: $grey-light;
-    :hover {
-      color: $brand-color;
-    }
   }
 }
 .social {
   font-size: 20px;
 }
 
-.copyright {
-  p {
-    font-size: 10px;
-    text-align: center;
-    color: $grey-light;
-    padding-left: 500px;
-  }
+.footer-copyright {
+  background-color: $grey-dark-darken;
+  text-align: center;
+  color: $grey-light;
+  font-size: 10px;
+  font-weight: lighter;
+  font-family: $base-font;
 }

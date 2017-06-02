@@ -2,24 +2,48 @@
   <div class="container">
     <div class="row">
       <div class="footer">
-        <div class="col-xs-12 col-sm-3 col-md-2">
-          <div class="footer-item">
-            <h3>DREAMSTONES Glasgow</h3>
-            <p>180 West Regent Street<br>G2 4RW Glasgow <br>United-Kingdom</p>
-          </div>
+        <div class="footer-item">
+          <h3>Dreamstones</h3>
+          <ul class="list-unstyled">
+            <li><p><%= link_to t(:home), root_path %></p></li>
+            <li><p><%= link_to t(:process), process_path  %></p></li>
+            <li><p><%= link_to t(:testimonial), testimonials_path %></p></li>
+            <li><p><%= link_to t(:project), projects_path %></p></li>
+            <li><p><%= link_to t(:team), teams_path %></p></li>
+            <li><p><%= link_to 'Contact', "https://dreamstones.typeform.com/to/Tf4mZY", data: {mode: "1"}, target: "_blank", class: 'typeform-share' %></p></li>
+          </ul>
         </div>
-        <div class="col-xs-12 col-sm-3 col-md-2">
-          <div class="footer-item">
-            <h3>DREAMSTONES London</h3>
-            <p>450 Bath Road<br>UB7 0EB London <br>United-Kingdom</p>
-          </div>
+        <div class="footer-item">
+          <h3>Dreamstones Offices</h3>
+          <ul class="list-unstyled">
+            <li><p> UK  <i class="fa fa-phone"></i> +44 (0) 141 312 3127</p></li>
+            <li><p>Glasgow UK</p></li>
+            <li><p>London UK</p></li>
+            <li><p>Lyon FR</p></li>
+          </ul>
         </div>
-        <div class="col-xs-12 col-sm-3 col-md-2">
-          <div class="footer-item">
-            <h3>DREAMSTONES Lyon</h3>
-            <p>21 av. Georges Pompidou<br>69003 Lyon<br> France</p>
-          </div>
+        <div class="footer-item">
+          <h3>Bespoke home project</h3>
+          <ul class="list-unstyled">
+            <li>
+              <p><%= link_to 'Renovation project', '#' %></p>
+            </li>
+            <li>
+              <p><%= link_to 'Extension project', '#' %></p>
+            </li>
+            <li>
+              <p><%= link_to 'New build project', '#' %></p>
+            </li>
+          </ul>
         </div>
+        <div class="footer-item ">
+          <%= image_tag 'logo-lg', class: 'logo-small' %>
+        </div>
+      </div>
+
+
+      <!-- ################## LEGACY ######################## -->
+      <!-- <div class="footer">
         <div class="col-xs-12 col-sm-3 col-md-2">
           <div class="footer-item text-center">
             <h3>Contact us</h3>
@@ -37,20 +61,16 @@
               </ul>
             </div>
           </div>
-        </div>
-        <!-- <div class="col-xs-12 col-sm-3 col-md-2">
+        </div> -->
+      <!-- <div class="col-xs-12 col-sm-3 col-md-2">
           <div class="footer-item">
             <h3></h3>
             <p></p>
           </div> -->
 
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="copyright">
-        <p>© 2012-2017 DREAMSTONES HOLDING Limited – All rights reserved</p>
-        </div>
     </div>
   </div>
+</div>
+<div class="footer-copyright">
+  Dreamstones Copyright © - <%= Date.today.strftime('%Y') %>
 </div>

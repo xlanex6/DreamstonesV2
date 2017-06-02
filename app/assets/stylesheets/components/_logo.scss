@@ -7,10 +7,14 @@
   }
 }
 
+.logo-small {
+  height: 130px;
+}
+
 .logo-bg-lg {
   background: url('logo-lg.png');
   background-repeat: no-repeat;
-  height: 110%;
+  height: 100%;
   width: 800px;
   position: absolute;
   z-index: -99;
