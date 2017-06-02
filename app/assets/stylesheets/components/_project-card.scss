@@ -30,9 +30,7 @@
   margin: 40px 11px;
   background-size: cover !important;
   position: relative;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px;
 
   color: white;
   cursor: pointer;
@@ -71,7 +69,7 @@
   h3 {
   font-family: $header-font;
   font-size: 36px;
-  color: #FFFFFF;
+  color: #f6f6f6;
   letter-spacing: 3.78px;
   text-align: center;
   }
@@ -82,7 +80,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  color: $brand-color;
+  color: #f6f6f6;
   font-weight: bold;
   font-size: 20px;
   img {
