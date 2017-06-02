@@ -5,6 +5,19 @@
     color: white;
   }
 }
+.project-header-title {
+  h1 {
+    margin-top: 140px;
+    margin-bottom: 50px;
+    font-family: $header-font;
+    font-weight: bold;
+    font-size: 48px;
+    color: $grey-dark;
+    text-align: center;
+    letter-spacing: 5.0px;
+    text-shadow: 1px 1px 5px white;
+  }
+}
 
 .project-show-title {
   color: $brand-color;
