@@ -5,6 +5,5 @@
 //= require cloudinary/jquery.cloudinary
 //= require masonry-raw
 //= require masonry
-//= require typeformhide
 //= require attachinary
 //= require_tree .

@@ -1,8 +1,9 @@
 en:
 
 ## home ##
-  baseline: ARCHITECTS & BUILDERS
-  baseline_p: Design & Build your home in 3 easy steps
+  baseline: "ARCHITECTS & BUILDERS DREAMSTONES"
+
+  baseline_p: Design & Build compagny for your bespoke project in France
   baseline_cta: Pick your project
 
   home_new_build: NEW BUILD
