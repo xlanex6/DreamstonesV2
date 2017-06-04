@@ -5,9 +5,38 @@
 
 .process-menu {
   display: flex;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.process-line {
+margin-top: 22px;
+}
+.process-menu-item {
+  position: absolute;
+  z-index: -1;
+  height: 264px;
+  transition: all ease-in-out 300ms;
+  &:hover {
+    transform: translate(0px, -20px);
+  }
+}
+
+.process-prep {
+  top: 0;
+  z-index: 0;
+}
+.process-design {
+  top: 0;
+  z-index: 0;
+  left: 478px;
+}
+.process-build {
+  top: 0;
+  z-index: 0;
+  left: 681px;
 }
 
 .time-line {

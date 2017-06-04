@@ -14,14 +14,23 @@
       <div class="process-menu">
         <%= image_tag 'process-user.png' %>
           <%= link_to "#prep" , class:"js-scrollTo" do %>
+          <div class="process-menu-item process-prep">
             <%= image_tag 'process-prep.png' %>
+          </div>
           <% end %>
           <%= link_to "#design" , class:"js-scrollTo" do %>
-            <%= image_tag 'process-design.png' %>
+            <div class="process-menu-item process-design">
+              <%= image_tag 'process-design.png' %>
+            </div>
           <% end %>
           <%= link_to "#build" , class:"js-scrollTo" do %>
-            <%= image_tag 'process-build.png' %>
+<div class="process-menu-item process-build">
+  <%= image_tag 'process-build.png' %>
+</div>
           <% end %>
+          <div class="process-line">
+            <%= image_tag 'process-line.png' %>
+          </div>
         <%= image_tag 'process-home.png' %>
       </div>
     </div>
