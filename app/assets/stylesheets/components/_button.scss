@@ -21,10 +21,13 @@
   color: white;
   transform: scale(20);
   text-shadow: 1px 1px 5px #000;
+  transition: all ease-in-out 200ms;
   &:hover {
-    color: $grey-light;
+    color: $grey-dark;
     border: 3px solid $grey-light;
     text-decoration: none;
+    background-color: white;
+    text-shadow: none;
   }
 }
 
