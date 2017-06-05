@@ -101,5 +101,11 @@
  }
 
 #timeline {
-  padding-left: 130px;
+  display: none;
+}
+
+@media (min-width: $screen-sm-min) {
+  #timeline {
+    display: block;
+  }
 }

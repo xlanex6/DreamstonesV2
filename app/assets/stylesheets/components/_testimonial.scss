@@ -5,6 +5,7 @@
   padding: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
+  flex: 0 0 48%;
 }
 
 .testi-card-name {
@@ -79,6 +80,13 @@ letter-spacing: 2.91px;
 }
 
 .testi-card-connection {
+}
+
+.testi-card-video {
+  iframe {
+    width: 375px;
+    height: 211px;
+  }
 }
 
 @media (max-width: $screen-sm-max)  {

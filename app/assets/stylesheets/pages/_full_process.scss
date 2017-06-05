@@ -31,13 +31,26 @@ margin-top: 22px;
 .process-design {
   top: 0;
   z-index: 0;
-  left: 478px;
+  left: 376px;
 }
 .process-build {
   top: 0;
   z-index: 0;
-  left: 681px;
+  left: 579px;
 }
+
+@media (min-width: 1200px) {
+  .process-design {
+    top: 0;
+    z-index: 0;
+    left: 478px;
+  }
+  .process-build {
+    top: 0;
+    z-index: 0;
+    left: 681px;
+  }
+ }
 
 .time-line {
   position: absolute;

@@ -1,7 +1,7 @@
 .pre-modal {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 90px;
+  padding-top: 20px;
+  padding-bottom: 120px;
   p {
     font-family: $base-font;
     font-size: 15px;
@@ -10,3 +10,10 @@
     }
 
 }
+
+@media (min-width: $screen-sm-min) {
+  .pre-modal {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+ }
