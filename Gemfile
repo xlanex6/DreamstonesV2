@@ -30,6 +30,7 @@ gem 'forest_liana'
 
 
 group :development, :test do
+  gem 'rails_real_favicon'
   gem 'binding_of_caller'
   gem 'better_errors'
   gem 'rspec-rails', '~> 3.6'
