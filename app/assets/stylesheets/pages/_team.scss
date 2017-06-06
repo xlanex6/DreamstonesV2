@@ -82,8 +82,30 @@
 
 .about-us {
   h3 {
-    margin-top: 100px;
+    margin-top: 150px;
   }
   margin-bottom: 50px;
-  width: 900px;
+  padding-left:  20px;
+  padding-right:  20px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .about-us {
+    margin-left: 250px;
+  }
+ }
+@media (min-width: $screen-md-min) {
+  .about-us {
+    margin-left: 400px;
+  }
+ }
+
+#timeline {
+  display: none;
+}
+
+@media (min-width: $screen-sm-min) {
+  #timeline {
+    display: block;
+  }
 }

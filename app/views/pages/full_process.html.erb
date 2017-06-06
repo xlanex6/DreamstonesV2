@@ -3,25 +3,34 @@
 <% content_for :meta_image, asset_path('process-bg.jpg') %>
 <% content_for :robots, 'index, follow' %>
 
-<div class="banner banner-process" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url(<%= asset_path('process-bg.jpg') %>);">
+<!-- <div class="banner banner-process" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url(<%= asset_path('process-bg.jpg') %>);">
   <div class="banner-content">
     <h1><%= t(:process_page_h1) %></h1>
   </div>
-</div>
+</div> -->
 <div class="wrapper-dark">
   <div class="container">
     <div class="row">
-      <div class="process-menu">
+      <div class="process-menu hidden-sm hidden-sm">
         <%= image_tag 'process-user.png' %>
           <%= link_to "#prep" , class:"js-scrollTo" do %>
-            <%= image_tag 'process-prep.png' %>
+            <div class="process-menu-item process-prep">
+              <%= image_tag 'process-prep.png' %>
+            </div>
           <% end %>
           <%= link_to "#design" , class:"js-scrollTo" do %>
-            <%= image_tag 'process-design.png' %>
+            <div class="process-menu-item process-design">
+              <%= image_tag 'process-design.png' %>
+            </div>
           <% end %>
           <%= link_to "#build" , class:"js-scrollTo" do %>
-            <%= image_tag 'process-build.png' %>
+            <div class="process-menu-item process-build">
+              <%= image_tag 'process-build.png' %>
+            </div>
           <% end %>
+          <div class="process-line">
+            <%= image_tag 'process-line.png' %>
+          </div>
         <%= image_tag 'process-home.png' %>
       </div>
     </div>

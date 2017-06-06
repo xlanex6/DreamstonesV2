@@ -1,9 +1,10 @@
 en:
 
 ## home ##
-  baseline: ARCHITECTS & BUILDERS
-  baseline_p: Design & Build your home in 3 easy steps
-  baseline_cta: Discover the process
+  baseline: "ARCHITECTS & BUILDERS DREAMSTONES"
+
+  baseline_p: Design & Build compagny for your bespoke project in France
+  baseline_cta: Pick your project
 
   home_new_build: NEW BUILD
   home_renovation: RENOVATION
@@ -33,7 +34,7 @@ en:
   home: Home
   process: Process
   testimonial: Testimonials
-  team: Team
+  team: About
   project: Projects
 
 
@@ -242,7 +243,7 @@ en:
 
 ####### project  ##################
 
-  project_page_h1: Every project is unique
+  project_page_h1: Pick your project
   testomial_project_title: Our clients speak for us
 
   last_project: Latest projects

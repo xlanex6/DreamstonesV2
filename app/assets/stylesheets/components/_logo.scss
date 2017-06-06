@@ -6,3 +6,17 @@
     height: 200px;
   }
 }
+
+.logo-small {
+  height: 130px;
+}
+
+.logo-bg-lg {
+  background: url('logo-lg.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 800px;
+  position: absolute;
+  z-index: -99;
+  opacity: 0.1;
+}

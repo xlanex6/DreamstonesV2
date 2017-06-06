@@ -1,104 +1,9 @@
-<div class="banner banner-commun" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 40%), url( <%= asset_path("team-header.jpg") %> );">
-  <div class="banner-content">
-    <h1><%= t(:team_title) %></h1>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
-    <div class="country">
-      <h3>in the UK </h3>
-      <%= image_tag 'team-uk.png'%>
-    </div>
-  </div>
-  <div class="team">
-    <div class="col-md-8">
-      <h3><%= t(:team_uk) %></h3>
-      <div class="team-cards">
-        <% @hq_team.each do |hq_team_member| %>
-        <div class="team-card">
-          <div class="team-card-picture">
-            <% if hq_team_member.photo? %>
-              <%= cl_image_tag hq_team_member.photo.path, class:'avatar-bordered', height:90, width:90, crop: :thumb, gravity: :face %>
-            <% end %>
-          </div>
-          <div class="team-card-name">
-            <h3><%= hq_team_member.name %></h3>
-          </div>
-        </div>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
-    <div class="country">
-      <h3>in France </h3>
-      <%= image_tag 'team-france.png'%>
-    </div>
-  </div>
-  <div class="team">
-    <div class="col-md-8">
-      <!-- <div class="team-cards">
-        <% @site_team.each do |site_team_member| %>
-        <div class="team-card">
-          <div class="team-card-picture">
-            <%= cl_image_tag site_team_member.photo.path, class:'avatar-bordered', height:90, width:90, crop: :thumb, gravity: :face %>
-          </div>
-          <div class="team-card-name">
-            <h3><%= site_team_member.name %></h3>
-          </div>
-        </div>
-        <% end %>
-      </div> -->
-      <h3><%= t(:team_france2) %></h3>
-      <div class="team-fr">
-        <% @trades['engineer'].each do |trade| %>
-        <div class="team-fr-item">
-          <%= image_tag "#{trade['picture']}" %>
-          <%= simple_format(trade['name'])%>
-        </div>
-        <% end %>
-      </div>
-      <h3><%= t(:team_france1) %></h3>
-      <div class="team-fr">
-        <div class="team-fr-item">
-          <%= image_tag "trades/sitemanagers" %>
-          Site-Manager <br>in the Alps
-        </div>
-        <div class="team-fr-item">
-          <%= image_tag "trades/sitemanagers" %>
-          Site-Manager <br>in Provence
-        </div>
-        <div class="team-fr-item">
-          <%= image_tag "trades/sitemanagers" %>
-          Site-Manager <br>in Dordogne
-        </div>
-        <div class="team-fr-item">
-          <%= image_tag "trades/sitemanagers" %>
-          Site-Manager <br>in French Riviera
-        </div>
-        <div class="team-fr-item">
-          <%= image_tag "trades/sitemanagers" %>
-          Site-Manager <br>in Languedoc
-        </div>
-      </div>
-      <h3><%= t(:team_france3) %></h3>
-      <div class="team-fr">
-        <% @trades['trades'].each do |trade| %>
-        <div class="team-fr-item">
-          <%= image_tag "#{trade['picture']}" %>
-          <%= trade['name']%>
-        </div>
-        <% end %>
-      </div>
-    <!-- </div>
-  </div>
-</div>
+
 <div class="container">
   <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-8"> -->
+    <!-- <div class="col-sm-6 hidden-xs"> -->
+      <div class="logo-bg-lg hidden-xs">
+      </div>
       <div class="about-us">
         <h3><%= t(:home_h3) %></h3>
         <p class="text-justify"><%= t(:home_p1) %></p>
@@ -108,6 +13,122 @@
         <div class="margin-b"></div>
       </div>
     </div>
+    <%= render 'shared/timeline' %>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row">
+<div class="col-md-4">
+<div class="country">
+<h3>in the UK </h3>
+<%= image_tag 'team-uk.png'%>
 </div>
-<%= render 'shared/timeline' %>
+</div>
+<div class="team">
+<div class="col-md-8">
+<h3><%= t(:team_uk) %></h3>
+<div class="team-cards">
+<% @hq_team.each do |hq_team_member| %>
+<div class="team-card">
+<div class="team-card-picture">
+<% if hq_team_member.photo? %>
+<%= cl_image_tag hq_team_member.photo.path, class:'avatar-bordered', height:90, width:90, crop: :thumb, gravity: :face %>
+<% end %>
+</div>
+<div class="team-card-name">
+<h3><%= hq_team_member.name %></h3>
+</div>
+</div>
+<% end %>
+</div>
+</div>
+</div>
+</div> -->
+<!-- <div class="row">
+<div class="col-md-4">
+<div class="country">
+<h3>in France </h3>
+<%= image_tag 'team-france.png'%>
+</div>
+</div>
+<div class="team">
+<div class="col-md-8">
+<h3><%= t(:team_france2) %></h3>
+<div class="team-fr">
+<% @trades['engineer'].each do |trade| %>
+<div class="team-fr-item">
+<%= image_tag "#{trade['picture']}" %>
+<%= simple_format(trade['name'])%>
+</div>
+<% end %>
+</div>
+<h3><%= t(:team_france1) %></h3>
+<div class="team-fr">
+<div class="team-fr-item">
+<%= image_tag "trades/sitemanagers" %>
+Site-Manager <br>in the Alps
+</div>
+<div class="team-fr-item">
+<%= image_tag "trades/sitemanagers" %>
+Site-Manager <br>in Provence
+</div>
+<div class="team-fr-item">
+<%= image_tag "trades/sitemanagers" %>
+Site-Manager <br>in Dordogne
+</div>
+<div class="team-fr-item">
+<%= image_tag "trades/sitemanagers" %>
+Site-Manager <br>in French Riviera
+</div>
+<div class="team-fr-item">
+<%= image_tag "trades/sitemanagers" %>
+Site-Manager <br>in Paris
+</div>
+<div class="team-fr-item">
+<%= image_tag "trades/sitemanagers" %>
+Site-Manager <br>in Normandy
+</div>
+<div class="team-fr-item">
+<%= image_tag "trades/sitemanagers" %>
+Site-Manager <br>in Languedoc
+</div>
+</div>
+<h3><%= t(:team_france3) %></h3>
+<div class="team-fr">
+<% @trades['trades'].each do |trade| %>
+<div class="team-fr-item">
+<%= image_tag "#{trade['picture']}" %>
+<%= trade['name']%>
+</div>
+<% end %>
+</div>
+</div> -->
+<!-- </div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-4"></div>
+<div class="col-md-8"> -->
+<!-- <div class="about-us">
+<h3><%= t(:home_h3) %></h3>
+<p class="text-justify"><%= t(:home_p1) %></p>
+<p class="text-justify"><%= t(:home_p2) %></p>
+<p class="text-justify"><%= t(:home_p3) %></p>
+<p class="text-justify"><%= t(:home_p4) %></p>
+<div class="margin-b"></div>
+</div>
+</div>
+</div> -->
+
+
+<!-- legacy -->
