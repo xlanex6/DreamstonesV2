@@ -8,7 +8,7 @@
 }
 
 .logo-small {
-  height: 130px;
+  height: 180px;
 }
 
 .logo-bg-lg {
@@ -19,4 +19,9 @@
   position: absolute;
   z-index: -99;
   opacity: 0.1;
+}
+
+.logo-footer {
+  color: black;
+  margin-top: 20px;
 }
