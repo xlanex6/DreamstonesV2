@@ -7,7 +7,12 @@ Rails.application.routes.draw do
   devise_for :users
   scope '(:locale)', locale: /fr/ do
     root to: 'pages#home'
-    resources :projects, only: [:index, :show, :new, :create, :edit, :update]
+    resources :projects do
+      collection do
+        get :renovation
+        get :new_build
+      end
+    end
     resources :testimonials, only: [:index, :new, :create]
     resources :teams, only: [:index, :new, :create]
     resources :portofolios, only: [:index, :new, :create, :edit, :update]
