@@ -24,7 +24,6 @@
   margin-top: 30px;
 }
 .project-card {
-  text-align: center;
   flex: 0 1 360px;
   height: 189px;
   margin: 40px 11px;
@@ -65,13 +64,14 @@
 .project-title {
   height: 100%;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 45px;
   h3 {
   font-family: $header-font;
   font-size: 33px;
   color: #f6f6f6;
   letter-spacing: 3.78px;
   text-align: center;
+  padding: 0 10px;
   }
 }
 
