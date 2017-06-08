@@ -34,8 +34,7 @@
 
   color: white;
   cursor: pointer;
-  // border-left: 10px solid $brand-color;
-  border-left: 12px solid $brand-color;
+  border-left: 15px solid $brand-color;
   box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
   transition: all ease-in-out 300ms;
   &:hover {
@@ -45,9 +44,9 @@
 }
 
 .project-category-img {
-  top: -22px;
+  top: 63px;
   position: absolute;
-  left: -26px;
+  left: -27px;
 }
 .project-category-text {
   position: absolute;

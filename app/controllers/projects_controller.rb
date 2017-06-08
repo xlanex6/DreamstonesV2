@@ -6,6 +6,15 @@ class ProjectsController < ApplicationController
     @projects = Project.all
   end
 
+  def renovation
+    @projects = Project.only_renovation
+    render :index
+  end
+  def new_build
+    @projects = Project.only_new_build
+    render :index
+  end
+
   def show
     @portofolios = Portofolio.order(portofolio_order: :asc).last(3)
     speed_optimisation(@project)
@@ -46,7 +55,7 @@ class ProjectsController < ApplicationController
                                     :photo,
                                     :category,
                                     :new_buid,
-                                    :renovate,
+                                    :renovation,
                                     :extension,
                                     :prestige,
                                     :homepage,

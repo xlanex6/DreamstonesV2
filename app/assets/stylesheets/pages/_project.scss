@@ -19,6 +19,17 @@
   }
 }
 
+.filter-bar {
+  text-align: center;
+  p {
+    color: $grey-dark;
+    font-family: $base-font;
+    font-weight: lighter;
+    font-size: 14px;
+
+  }
+}
+
 @media (min-width: $screen-sm-min) {
   .project-header-title {
     h1 {
