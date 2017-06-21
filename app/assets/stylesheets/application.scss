@@ -30,7 +30,7 @@
   @extend .bg-gradient-dark;
 }
 .wrapper-footer {
-  @extend .bg-gradient-light;
+  background-color: $grey-dark-darken;
 }
 
 .wrapper-light-icon {
