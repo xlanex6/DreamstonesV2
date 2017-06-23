@@ -17,72 +17,73 @@
     <div class="project-type">
       <%= image_tag "#{icon_category(@project.category)}-home.png" , class: 'logo-project-type'%>
       <p><%= @project.category %>
-        </p>
+      </p>
     </div>
     <div class="project-text-content">
-      <h2><span class="pre">Your</span><br>
+      <h2>
+        <span class="pre">Your</span><br>
         <%= @project.title %></span><br>
-         <span class="pre orange">in France</span></h2>
-      <p><%= simple_format(@project.text) %></p>
-    </div>
+      <span class="pre orange">in France</span>
+    </h2>
+    <p><%= simple_format(@project.text) %></p>
   </div>
-  <div class="col-xs-12 col-sm-6">
-    <div class="project-text-form hidden-xs" id='form'>
-      <iframe id="my_typeform" src="https://dreamstones.typeform.com/to/BrA63A"></iframe>
-    </div>
-    <div class="mobile-form hidden-sm hidden-md hidden-lg">
-      <p>Check feasibility & Get a gross estimate for your project.</p>
-      <h2><%= link_to 'Get an estimate', "https://dreamstones.typeform.com/to/BrA63A", class: 'ds-btn btn-orange'%></h2>
-    </div>
+</div>
+<div class="col-xs-12 col-sm-6">
+  <div class="project-text-form hidden-xs" id='form'>
+    <iframe id="my_typeform" src="https://dreamstones.typeform.com/to/BrA63A"></iframe>
   </div>
+  <div class="mobile-form hidden-sm hidden-md hidden-lg">
+    <p>Check feasibility & Get a gross estimate for your project.</p>
+    <h2><%= link_to 'Get an estimate', "https://dreamstones.typeform.com/to/BrA63A", class: 'ds-btn btn-orange'%></h2>
+  </div>
+</div>
 </div>
 </div>
 
 <% if @project.pictures? %>
 <div class="row">
-  <div class="project-pictures">
-    <div class="project-picture project-picture-left" style="background-image: url(<%= @project.pictures.first.fullpath%>)"></div>
-    <div class="project-picture project-picture-right" style="background-image: url(<%= @project.pictures.second.fullpath%>)"></div>
-  </div>
+<div class="project-pictures">
+<div class="project-picture project-picture-left" style="background-image: url(<%= @project.pictures.first.fullpath%>)"></div>
+<div class="project-picture project-picture-right" style="background-image: url(<%= @project.pictures.second.fullpath%>)"></div>
+</div>
 </div>
 <% end %>
 <%= render 'shared/single-point-contact' %>
 <%= render 'shared/home-features' %>
-<div class="wrapper-light-icon">
 <div class="container">
-  <%= render 'shared/faq' %>
-  <div class="row">
-    <div class="lastest-project-cards">
-      <h3><%= t(:last_project) %></h3>
-      <% @portofolios.each do |last_project| %>
-      <%= render partial: "shared/last-projects", locals: {last_project: last_project} %>
-      <% end %>
-    </div>
+<%= render 'shared/faq' %>
+<div class="row">
+  <div class="lastest-project-cards">
+    <div class="title3">Latest <span class="orange">projects</span></div>
+    <% @portofolios.each do |last_project| %>
+    <%= render partial: "shared/last-projects", locals: {last_project: last_project} %>
+    <% end %>
   </div>
-  <div class="row">
-    <h3 class="text-center"><%= t(:testomial_project_title) %></h3>
+</div>
+<div class="row">
+  <div class="title3">Our <span class="orange">clients</span> speak for us</div>
 
-    <div class="new-testomonial">
-      <div class="testi-card">
-        <div class="testi-card-content ">
-          <p>"We worked with Dreamstones and this proved ideal as the house we ended up buying was in need of total renovation. If we hadn't had the expertise and shared vision of Dreamstones, we would not have bought our farmhouse. Subsequently, we worked
-            over several months finalising plans and designs, in great detail, to transform a dark lair of a place into something full of light and air. Dreamstones kept us up to speed on every nuance with frequent email and photo updates to ensure we were
-            comfortable with the progress. This care and attention to detail coupled with their experience meant, by August 2015, we had the home of our dreams in Southern France."</p>
-        </div>
-        <div class="testi-card-name">
-          <h3>David & Katie</h3>
-        </div>
-        <div class="testi-photos">
-          <%= image_tag 'katie.png', class: 'image-circle image-border-light' %>
-          <%= image_tag 'david.png', class: 'image-circle image-border-light' %>
-        </div>
+  <div class="new-testomonial">
+    <div class="testi-card">
+      <div class="testi-card-content ">
+        <p>"We worked with Dreamstones and this proved ideal as the house we ended up buying was in need of total renovation. If we hadn't had the expertise and shared vision of Dreamstones, we would not have bought our farmhouse. Subsequently, we worked
+          over several months finalising plans and designs, in great detail, to transform a dark lair of a place into something full of light and air. Dreamstones kept us up to speed on every nuance with frequent email and photo updates to ensure we were
+          comfortable with the progress. This care and attention to detail coupled with their experience meant, by August 2015, we had the home of our dreams in Southern France."</p>
+      </div>
+      <div class="testi-card-name">
+        <h3>David & Katie</h3>
+      </div>
+      <div class="testi-photos">
+        <%= image_tag 'katie.png', class: 'image-circle image-border-light' %>
+        <%= image_tag 'david.png', class: 'image-circle image-border-light' %>
+      </div>
 
-      </div>
-      <div class="testi-card-connection">
-        <%= image_tag 'testi-renovation.png' %>
-      </div>
-      <div class="testi-card-video">
-        <iframe src="https://www.youtube.com/embed/ObUcj1pCgrg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="testi-card-connection">
+      <%= image_tag 'testi-renovation.png' %>
+    </div>
+    <div class="testi-card-video">
+      <iframe src="https://www.youtube.com/embed/ObUcj1pCgrg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   <%= render 'shared/media-partners' %>
