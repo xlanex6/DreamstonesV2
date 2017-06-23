@@ -1,29 +1,33 @@
 .banner {
   display: flex;
-  background-color: rgba(21, 22, 20, 0.66);
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-position: center;
   h1 {
     font-family: $header-font;
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 48px;
-    color: $brand-color;
+    color: white;
     text-align: center;
-    letter-spacing: 5.0px;
+    letter-spacing: 20.0px;
     text-shadow: 1px 1px 5px #000;
   }
   p {
-    padding-bottom: 30px;
     font-family: $base-font;
     font-weight: lighter;
     font-size: 36px;
     color: #FFFFFF;
     text-shadow: 1px 1px 5px #000;
     }
+
 }
 
+.banner-content{
+  text-align: center;
+  margin: 30px 20px;
+
+}
 @media (max-width: $screen-sm-min) {
   .banner {
     h1 {
@@ -40,14 +44,25 @@
   margin-bottom: 20px;
 }
 .banner-home {
-  height: 80vh;
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: 2em;
+  h1 {
+    text-shadow: 2px 2px 9px #000;
+  }
+  p {
+    text-shadow: 2px 2px 9px #000;
+  }
 }
 
 .banner-process {
   height: 300px;
 }
 
-.banner-project {
-  height: 300px;
-  background-position: center;
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
 }

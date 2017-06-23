@@ -16,7 +16,6 @@ margin-top: 22px;
 }
 .process-menu-item {
   position: absolute;
-  z-index: -1;
   height: 264px;
   transition: all ease-in-out 300ms;
   &:hover {
@@ -110,12 +109,12 @@ margin-top: 22px;
 .right-dot {
   position: absolute;
   top: 40px;
-  left: -24px;
+  left: -17px;
 }
 .left-dot {
   position: absolute;
   top: 40px;
-  right: -28px;
+  right: -5px;
 }
 
 .mobile-padded {

@@ -19,17 +19,18 @@
   text-align: center;
   top: 70px;
   right: 47px;
-  height: 33px;
-  width: 280px;
+  height: 25px;
+  width: 244px;
   border-radius: 0 0 8px 8px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
   border: 1px solid #D08A17;
   p {
     color: #4A4A4A;
     font-family: $base-font;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 20px;
+    letter-spacing: 2px;
     text-shadow: 1px 1px 1px 0 rgba(74,74,74,0.29);
   }
 

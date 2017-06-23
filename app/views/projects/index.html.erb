@@ -1,14 +1,14 @@
 <div class="project-header-title">
-  <h1><%= t(:project_page_h1) %></h1>
+  <h1>select your <span class="orange">project</span></h1>
   <div class="filter-bar hidden-xs">
-    <p>Filter by</p>
+    <div class="title3" id="filter"><div class="pre">Filter by</div></div>
     <%= link_to 'All', projects_path, class: 'filter-btn' %>
     <%= link_to 'Renovation', renovation_projects_path, class: 'filter-btn' %>
     <%= link_to 'New build', new_build_projects_path, class: 'filter-btn' %>
 </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <%= render 'shared/project/project-card' %>
   </div>

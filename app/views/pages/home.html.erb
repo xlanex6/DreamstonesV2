@@ -1,19 +1,26 @@
-<div class="banner banner-home" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.6) 0%), url(<%= asset_path('sk2real.jpg') %>);">
-  <div class="banner-content text-center">
-    <h1>DREAMSTONES</br>ARCHITECTS & BUILDERS</h1>
+<div class="banner banner-home" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,0.3) 0%), url(<%= asset_path('sk2real.jpg') %>);">
+  <div class="banner-content">
+    <h1>ARCHITECTS & BUILDERS</h1>
     <p><%= t(:baseline_p)%></p>
-      <%= link_to projects_path, class: 'main-btn' do %>
-        <span><%= t(:baseline_cta) %></i></span>
-      <% end %>
+    <div class="arrow bounce"></div>
+</div>
+
+<!-- <div class="arrow">
+  <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyDQoJbDE4OS45OTktMTkwYzIwLjE3OC0yMC4xNzgsNTMuMTY0LTE5LjkxMyw3My42NzIsMC41OTVsMCwwYzIwLjUwOCwyMC41MDksMjAuNzcyLDUzLjQ5MiwwLjU5NSw3My42NzFMMjkzLjc1MSw0NTUuODY4eiIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyMC4yNDksNDU1Ljg2OGMyMC4xOCwyMC4xNzksNTMuMTY0LDE5LjkxMyw3My42NzItMC41OTVsMCwwYzIwLjUwOS0yMC41MDgsMjAuNzc0LTUzLjQ5MywwLjU5Ni03My42NzINCglsLTE5MC0xOTBjLTIwLjE3OC0yMC4xNzgtNTMuMTY0LTE5LjkxMy03My42NzEsMC41OTVsMCwwYy0yMC41MDgsMjAuNTA5LTIwLjc3Miw1My40OTItMC41OTUsNzMuNjcxTDIyMC4yNDksNDU1Ljg2OHoiLz4NCjwvc3ZnPg0K" />
+</div> -->
+
+
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="title3">
+        <span class="pre">select your</span><br>
+        PROJECT<span class="orange"> TYPE</span>
+    </div>
+    <%= render 'shared/project/project-card' %>
   </div>
 </div>
 <%= render 'shared/single-point-contact' %>
-<div class="container">
-  <div class="row">
-    <div class="text-center"><h3>Most popular project types</h3></div>
-<%= render 'shared/project/project-card' %>
-  </div>
-</div>
 
-<%= render 'shared/media-partners' %>
 <%= render 'shared/home-features' %>
+<%= render 'shared/media-partners' %>

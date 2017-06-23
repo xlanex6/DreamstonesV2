@@ -1,26 +1,28 @@
 .banner-project-show {
   height: 70vh;
-  background-position: center;
   h1 {
     color: white;
+    letter-spacing: 10px;
   }
 }
 .project-header-title {
   h1 {
-    margin-top: 42px;
+    margin-top: 120px;
     margin-bottom: -25px;
-    font-size: 28px;
-    font-family: $header-font;
-    font-weight: bold;
-    color: $grey-dark;
     text-align: center;
-    letter-spacing: 5.0px;
-    text-shadow: 1px 1px 5px white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $header-font;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 15px;
+    color: $grey-dark;
   }
 }
 
 .filter-bar {
   text-align: center;
+  margin-bottom: 40px;
   p {
     color: $grey-dark;
     font-family: $base-font;
@@ -36,6 +38,7 @@
       margin-top: 140px;
       margin-bottom: 50px;
       font-size: 48px;
+      line-height: 53px;
     }
   }
 }
@@ -80,16 +83,12 @@
 .project-type  {
   position: relative;
   p {
-    color: #4A4A4A;
-    font-size: 27px;
-    font-family:$header-font;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 33px;
-    text-align: left;
+    @extend .heading3-base;
     margin-top: 15px;
-    margin-left: 123px;
+    text-align: right;
+    font-size: 20px;
     text-transform: uppercase;
+    letter-spacing: 10px;
 
   }
   img {
@@ -109,12 +108,13 @@
 
 .project-text-content {
   h2 {
-    text-align: center;
-    margin-top: 60px;
+    @extend .heading3-base;
+    margin-top: 30px;
     margin-bottom: 40px;
   }
   p {
     text-align: justify;
+    padding: 0 15px;
   }
 }
 
@@ -160,4 +160,11 @@
     border-right: 8px solid $brand-color;
 
   }
+  .project-type p {
+    text-align: center;
+  }
+}
+
+#filter {
+  margin-bottom: 6px;
 }

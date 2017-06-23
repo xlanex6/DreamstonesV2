@@ -1,6 +1,6 @@
 // Your footer style
 .footer {
-  color: $grey-dark;
+  color: $grey-light;
   margin: 30px 10px;
   display: flex;
   justify-content: space-between;
@@ -8,26 +8,36 @@
 
 
   .footer-item {
-    flex: 0 0 200px;
+    flex: 1 0 250px;
     padding-bottom: 20px;
+    padding-right: 10px;
     text-align: left;
+    svg {
+      height: 180px;
+
+    }
   }
 
   h3 {
-    color: $grey-dark-darken;
     font-family: $header-font;
+    text-transform: uppercase;
     margin-top: 0;
-    font-size: 15px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    letter-spacing: 4px;
   }
 
   p {
-    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 9px;
     :hover {
       opacity: 0.7;
     }
   }
   a {
     text-decoration: none;
+    color: $grey-light;
   }
 }
 .social {

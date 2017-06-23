@@ -86,3 +86,23 @@
 .margin-b {
   margin-bottom: 21px;
 }
+
+.title3 {
+  @extend .heading3-base;
+  margin-bottom: 1.8em;
+}
+.pre {
+  font-size: 16px;
+  letter-spacing: 6px;
+}
+
+.heading3-base {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $header-font;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 15px;
+  color: $grey-dark;
+}

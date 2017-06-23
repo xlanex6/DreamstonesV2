@@ -1,47 +1,91 @@
 .wrapper-features {
-  background: url('feature-bg.png');
-  background-repeat: repeat;
+  // background: url('feature-bg.png');
+  // background-repeat: repeat;
+  background-color: #d2d1d1;
+  height: 100%;
+  margin-bottom: 30px;
+  margin-top: 55px;
+
+
 }
 
 .features{
   height: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex-direction: column;
 }
+
+@media (min-width: $screen-sm-min) {
+  .features {
+    flex-direction: row;
+  }
+  .feature {
+    flex: 1 1 50%;
+
+  }
+ }
+
+ @media (min-width: $screen-md-min) {
+   .feature {
+     flex:  1 1 18%;
+   }
+ }
+
+
 .feature {
   text-align: center;
-  flex: 0 1 320px;
-  margin: 30px 0;
-  h3 {
-    color: white;
-    font-family: $header-font;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 27px;
+  position: relative;
+  min-height: 180px;
+  padding: 18px 0;
 
-  }
-  .feature-text {
-    margin: auto;
-  }
-  p {
-    color: white;
-    text-align: justify;
-    font-family: $base-font;
-    font-size: $base-size;
-    line-height: 22px;
-    font-weight: lighter;
+}
+.feature-title {
+  color: $grey-dark;
+  font-family: $header-font;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  margin-top: 10px;
+  letter-spacing: 6px;
+}
 
+.icon {
+  svg {
+    height: 70px;
+    fill: $grey-dark;
   }
-  .icon {
-    width: 150px;
-    margin: auto;
-    border-bottom: 5px solid $brand-color;
-    img {
-      padding-bottom: 20px;
+}
+.feature-content {
+padding: 34px 0;
+}
 
-    }
-  }
+.feature:hover .feature-text {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.feature-text {
+  color: white;
+  text-align: justify;
+  font-family: $base-font;
+  font-size: $base-size;
+  line-height: 22px;
+  font-weight: lighter;
+  opacity: 0;
+  border-radius: 3px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(74, 74, 74, 0.99);
+  height: 100%;
+  width: 100%;
+  padding-top: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
