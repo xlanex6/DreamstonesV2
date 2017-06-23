@@ -47,6 +47,12 @@
   min-height: 100vh;
   position: relative;
   margin-bottom: 2em;
+  h1 {
+    text-shadow: 2px 2px 9px #000;
+  }
+  p {
+    text-shadow: 2px 2px 9px #000;
+  }
 }
 
 .banner-process {

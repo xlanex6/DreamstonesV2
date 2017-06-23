@@ -1,6 +1,6 @@
 <div class="banner banner-home" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,0.3) 0%), url(<%= asset_path('sk2real.jpg') %>);">
   <div class="banner-content">
-    <h1>ARCHITECTS <span class="orange">&</span> BUILDERS</h1>
+    <h1>ARCHITECTS & BUILDERS</h1>
     <p><%= t(:baseline_p)%></p>
     <div class="arrow bounce"></div>
 </div>
@@ -15,12 +15,12 @@
   <div class="row">
     <div class="title3">
         <span class="pre">select your</span><br>
-        PROJECTS<span class="orange"> TYPE</span>
+        PROJECT<span class="orange"> TYPE</span>
     </div>
     <%= render 'shared/project/project-card' %>
   </div>
 </div>
-<!-- <%= render 'shared/simple-process-light' %> -->
+<%= render 'shared/single-point-contact' %>
 
 <%= render 'shared/home-features' %>
 <%= render 'shared/media-partners' %>

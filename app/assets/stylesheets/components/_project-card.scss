@@ -22,13 +22,16 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 121px;
+  margin-bottom: 16px;
 
 }
 .project-card {
   flex: 0 1 360px;
   height: 189px;
-  margin: 40px 11px;
+  margin-top: 0;
+  margin-left: 11px;
+  margin-right: 11px;
+  margin-bottom: 40px;
   background-size: cover !important;
   position: relative;
   border-radius: 5px;
