@@ -54,7 +54,7 @@
 <%= render 'shared/faq' %>
 <div class="row">
   <div class="lastest-project-cards">
-    <div class="title3">Latest <span class="orange">projects</span></div>
+    <div class="title3"><div class="pre">Latest</div> <span class="orange">projects</span></div>
     <% @portofolios.each do |last_project| %>
     <%= render partial: "shared/last-projects", locals: {last_project: last_project} %>
     <% end %>
