@@ -17,12 +17,12 @@
     <div class="project-type">
       <%= image_tag "#{icon_category(@project.category)}-home.png" , class: 'logo-project-type'%>
       <p><%= @project.category %>
-        PROJECT</p>
+        </p>
     </div>
     <div class="project-text-content">
-      <h2>Your
-        <span class="lowercase"><%= @project.title %></span>
-        project in France</h2>
+      <h2><span class="pre">Your</span><br>
+        <%= @project.title %></span><br>
+         <span class="pre orange">in France</span></h2>
       <p><%= simple_format(@project.text) %></p>
     </div>
   </div>

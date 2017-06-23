@@ -88,6 +88,15 @@
 }
 
 .title3 {
+  @extend .heading3-base;
+  margin-bottom: 1.8em;
+}
+.pre {
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.heading3-base {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -96,10 +105,4 @@
   line-height: 30px;
   letter-spacing: 15px;
   color: $grey-dark;
-  margin-bottom: 1.8em;
-  .pre {
-    font-size: 13px;
-    letter-spacing: 3px;
-  }
-
 }
