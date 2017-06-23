@@ -48,10 +48,7 @@
 </div>
 </div>
 <% end %>
-<%= render 'shared/single-point-contact' %>
-<%= render 'shared/home-features' %>
 <div class="container">
-<%= render 'shared/faq' %>
 <div class="row">
   <div class="lastest-project-cards">
     <div class="title3"><div class="pre">Latest</div> <span class="orange">projects</span></div>
@@ -59,6 +56,7 @@
     <%= render partial: "shared/last-projects", locals: {last_project: last_project} %>
     <% end %>
   </div>
+</div>
 </div>
 <div class="row">
   <div class="title3"><span class="pre">Our <br></span>clients <span class="orange">speak</span> for us</div>
@@ -69,25 +67,29 @@
         <p>"We worked with Dreamstones and this proved ideal as the house we ended up buying was in need of total renovation. If we hadn't had the expertise and shared vision of Dreamstones, we would not have bought our farmhouse. Subsequently, we worked
           over several months finalising plans and designs, in great detail, to transform a dark lair of a place into something full of light and air. Dreamstones kept us up to speed on every nuance with frequent email and photo updates to ensure we were
           comfortable with the progress. This care and attention to detail coupled with their experience meant, by August 2015, we had the home of our dreams in Southern France."</p>
-      </div>
-      <div class="testi-card-name">
-        <h3>David & Katie</h3>
-      </div>
-      <div class="testi-photos">
-        <%= image_tag 'katie.png', class: 'image-circle image-border-light' %>
-        <%= image_tag 'david.png', class: 'image-circle image-border-light' %>
-      </div>
+        </div>
+        <div class="testi-card-name">
+          <h3>David & Katie</h3>
+        </div>
+        <div class="testi-photos">
+          <%= image_tag 'katie.png', class: 'image-circle image-border-light' %>
+          <%= image_tag 'david.png', class: 'image-circle image-border-light' %>
+        </div>
 
-    </div>
-    <div class="testi-card-connection">
-      <%= image_tag 'testi-renovation.png' %>
-    </div>
-    <div class="testi-card-video">
-      <iframe src="https://www.youtube.com/embed/ObUcj1pCgrg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="testi-card-connection">
+        <%= image_tag 'testi-renovation.png' %>
+      </div>
+      <div class="testi-card-video">
+        <iframe src="https://www.youtube.com/embed/ObUcj1pCgrg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
-  <%= render 'shared/media-partners' %>
+<%= render 'shared/single-point-contact' %>
+<%= render 'shared/home-features' %>
+<div class="container">
+<%= render 'shared/faq' %>
 </div>
-</div>
+<%= render 'shared/media-partners' %>
 <%= render 'shared/project-link-form' %>
 <!-- <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
