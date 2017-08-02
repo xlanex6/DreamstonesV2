@@ -1,5 +1,7 @@
 <!-- GA -->
 <% if Rails.env == "production" %>
+
+
 <script>
   (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
@@ -16,8 +18,14 @@
 
   ga('create', 'UA-39962684-1', 'auto');
   ga('send', 'pageview');
+  var dimensionValue = '<%= params[:utm_source] %>';
+  ga('set', 'dimension1', dimensionValue);
 </script>
 <% end %>
+
+
+
+
 <!-- typeform  -->
 <script>
 (function() {
