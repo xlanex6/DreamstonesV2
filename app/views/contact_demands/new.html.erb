@@ -12,10 +12,10 @@
       <div id="form-contact-page">
 
       <%= simple_form_for @contact_demand, method: :post, url: contact_demands_path do |f|%>
-      <%= f.input :full_name, placeholder: 'John Doe', label_html: { class: 'form-label' } %>
-      <%= f.input :email, placeholder: 'john.doe@gmail.com', label_html: { class: 'form-label' } %>
-      <%= f.input :phone, placeholder: '07111 22222', label_html: { class: 'form-label' } %>
-      <%= f.input :message, placeholder: 'optional', label_html: { class: 'form-label' } %>
+        <%= f.input :full_name, placeholder: 'John Doe', label_html: { class: 'form-label' } %>
+        <%= f.input :email, placeholder: 'john.doe@gmail.com', label_html: { class: 'form-label' } %>
+        <%= f.input :phone, placeholder: '07111 22222', label_html: { class: 'form-label' } %>
+        <%= f.input :message, placeholder: 'optional', label_html: { class: 'form-label' } %>
       <div class="text-center">
         <%= f.button :submit, 'Enquire', class: 'form-cta'%>
       </div>

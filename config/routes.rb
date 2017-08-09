@@ -14,7 +14,7 @@ Rails.application.routes.draw do
         get :new_build
       end
     end
-    resources :contact_demands, only: [:create]
+    resources :contact_demands, only: [:new, :create]
     resources :testimonials, only: [:index, :new, :create]
     resources :teams, only: [:index, :new, :create]
     resources :portofolios, only: [:index, :new, :create, :edit, :update]

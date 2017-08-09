@@ -8,10 +8,6 @@ class PagesController < ApplicationController
     @projects = Project.where(homepage: true)
   end
 
-  def contact
-    @contact_demand = ContactDemand.new
-  end
-
   def robots
     respond_to :text
   end
