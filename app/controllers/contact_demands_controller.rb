@@ -14,7 +14,7 @@ class ContactDemandsController < ApplicationController
 private
 
   def contact_demand_params
-    params.require(:contact_demand).permit(:phone, :message, :phone, :full_name, :project_id)
+    params.require(:contact_demand).permit(:phone, :email, :message, :phone, :full_name, :project_id)
   end
 
 end

@@ -28,6 +28,7 @@ gem "coffee-rails"
 gem 'friendly_id', '~> 5.1.0'
 gem 'sitemap_generator'
 gem 'forest_liana'
+gem 'postmark-rails'
 
 
 group :development, :test do
@@ -44,6 +45,7 @@ group :development, :test do
   gem 'browser_sync_rails'
   gem 'listen', '~> 3.0.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem "letter_opener"
 end
 
 group :production do
