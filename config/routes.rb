@@ -14,11 +14,13 @@ Rails.application.routes.draw do
         get :new_build
       end
     end
+    resources :contact_demands, only: [:create]
     resources :testimonials, only: [:index, :new, :create]
     resources :teams, only: [:index, :new, :create]
     resources :portofolios, only: [:index, :new, :create, :edit, :update]
     get '/process', to: 'pages#full_process'
     get '/mentions', to: 'pages#legals_mentions'
+    get '/contact', to: 'pages#contact'
     get '/robots.:format' => 'pages#robots'
 
 
