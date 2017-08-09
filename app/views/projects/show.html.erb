@@ -29,25 +29,25 @@
   </div>
 </div>
 <div class="col-xs-12 col-sm-6">
-  <div class="project-text-form hidden-xs" id='form'>
+  <div class="project-text-form" id='form'>
     <h3>
       <span class="pre">Enquire to</span><br>discuss<br><span class="pre orange">your project</span></span><br>
   </h3>
     <%= simple_form_for [@project, @contact_demand], method: :post, url: project_contact_demands_path(@project) do |f|%>
-      <%= f.input :full_name %>
-      <%= f.input :email %>
-      <%= f.input :phone %>
-      <%= f.input :message %>
+      <%= f.input :full_name, placeholder: 'John Doe' %>
+      <%= f.input :email, placeholder: 'john.doe@gmail.com' %>
+      <%= f.input :phone, placeholder: '07111 22222' %>
+      <%= f.input :message, placeholder: 'optional' %>
       <div class="text-center">
         <%= f.button :submit, 'Enquire', id: 'form-cta'%>
       </div>
 
     <% end %>
   </div>
-  <div class="mobile-form hidden-sm hidden-md hidden-lg">
+  <!-- <div class="mobile-form hidden-sm hidden-md hidden-lg">
     <p>Check feasibility & Get a gross estimate for your project.</p>
     <h2><%= link_to 'Get an estimate', "https://dreamstones.typeform.com/to/BrA63A", class: 'ds-btn btn-orange'%></h2>
-  </div>
+  </div> -->
 </div>
 </div>
 </div>
