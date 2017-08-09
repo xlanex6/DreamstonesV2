@@ -28,7 +28,7 @@ gem "coffee-rails"
 gem 'friendly_id', '~> 5.1.0'
 gem 'sitemap_generator'
 gem 'forest_liana'
-gem 'postmark-rails'
+gem 'sendgrid-ruby'
 
 
 group :development, :test do
