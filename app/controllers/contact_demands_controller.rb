@@ -9,11 +9,7 @@ class ContactDemandsController < ApplicationController
     @project = Project.friendly.find(params[:project_id]) if params[:project_id] != nil
     @contact_demand = ContactDemand.new(contact_demand_params)
     if @contact_demand.save
-      if @project == nil
-        redirect_to root_path, notice: 'Enquiry sent!'
-      else
-        redirect_to project_path(@project), notice: "Enquiry sent!"
-      end
+      redirect_to thanks_path
     else
       render :new
     end

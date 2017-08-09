@@ -20,7 +20,7 @@ Rails.application.routes.draw do
     resources :portofolios, only: [:index, :new, :create, :edit, :update]
     get '/process', to: 'pages#full_process'
     get '/mentions', to: 'pages#legals_mentions'
-    get '/contact', to: 'pages#contact'
+    get '/thanks', to: 'pages#thanks'
     get '/robots.:format' => 'pages#robots'
 
 

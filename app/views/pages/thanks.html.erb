@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="text-center" id="thanks">
+        <%= image_tag 'logo-lg.png' %>
+        <h3>Dear sir, madam</h3>
+<p>
+
+  Thank you for your enquiry. We will be contacting you shortly to discuss your French home project and see how we can help.
+</p>
+<p>
+
+  Dreamstones team
+
+
+</p>
+<p class="nota"> You will be automatically redirect to home page in few seconds</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+
+window.setTimeout(function(){
+
+       // Move to a new location or you can do something else
+       window.location.href = "<%= root_path %>";
+
+   }, 6000);
+
+</script>
