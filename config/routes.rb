@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   scope '(:locale)', locale: /fr/ do
     root to: 'pages#home'
     resources :projects do
+      resources :contact_demands, only: [:create]
       collection do
         get :renovation
         get :new_build

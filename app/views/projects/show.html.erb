@@ -30,7 +30,19 @@
 </div>
 <div class="col-xs-12 col-sm-6">
   <div class="project-text-form hidden-xs" id='form'>
-    <iframe id="my_typeform" src="https://dreamstones.typeform.com/to/BrA63A"></iframe>
+    <h3>
+      <span class="pre">Enquire to</span><br>discuss<br><span class="pre orange">your project</span></span><br>
+  </h3>
+    <%= simple_form_for [@project, @contact_demand], method: :post, url: project_contact_demands_path(@project) do |f|%>
+      <%= f.input :full_name %>
+      <%= f.input :email %>
+      <%= f.input :phone %>
+      <%= f.input :message %>
+      <div class="text-center">
+        <%= f.button :submit, 'Enquire', id: 'form-cta'%>
+      </div>
+
+    <% end %>
   </div>
   <div class="mobile-form hidden-sm hidden-md hidden-lg">
     <p>Check feasibility & Get a gross estimate for your project.</p>

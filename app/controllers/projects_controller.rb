@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_action :set_user, only: %i[show edit update]
+  before_action :set_project, only: %i[show edit update]
   skip_before_action :authenticate_user!, only: %i[index show renovation new_build]
 
   def index
@@ -18,6 +18,7 @@ class ProjectsController < ApplicationController
   def show
     @portofolios = Portofolio.order(portofolio_order: :asc).last(3)
     speed_optimisation(@project)
+    @contact_demand = ContactDemand.new
   end
 
   def new
@@ -45,7 +46,7 @@ class ProjectsController < ApplicationController
 
   private
 
-  def set_user
+  def set_project
     @project = Project.friendly.find(params[:id])
   end
 

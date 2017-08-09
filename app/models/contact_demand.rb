@@ -1,0 +1,3 @@
+class ContactDemand < ApplicationRecord
+  
+end
