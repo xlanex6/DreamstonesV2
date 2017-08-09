@@ -17,20 +17,24 @@
 
     }
   }
+  .footer-item:nth-child(3){
+    margin-left: 15px;
+
+  }
 
   h3 {
     font-family: $header-font;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 30px;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 4px;
   }
 
   p {
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 9px;
+    font-size: 12px;
     :hover {
       opacity: 0.7;
     }
@@ -48,7 +52,8 @@
   background-color: $grey-dark-darken;
   text-align: center;
   color: $grey-light;
-  font-size: 10px;
+  font-size: 12px;
+  padding-bottom: 5px;
   font-weight: lighter;
   font-family: $base-font;
 }

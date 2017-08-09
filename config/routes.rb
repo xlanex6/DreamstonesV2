@@ -8,16 +8,19 @@ Rails.application.routes.draw do
   scope '(:locale)', locale: /fr/ do
     root to: 'pages#home'
     resources :projects do
+      resources :contact_demands, only: [:create]
       collection do
         get :renovation
         get :new_build
       end
     end
+    resources :contact_demands, only: [:new, :create]
     resources :testimonials, only: [:index, :new, :create]
     resources :teams, only: [:index, :new, :create]
     resources :portofolios, only: [:index, :new, :create, :edit, :update]
     get '/process', to: 'pages#full_process'
     get '/mentions', to: 'pages#legals_mentions'
+    get '/thanks', to: 'pages#thanks'
     get '/robots.:format' => 'pages#robots'
 
 
