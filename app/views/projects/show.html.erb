@@ -34,10 +34,10 @@
       <span class="pre">Enquire to</span><br>discuss<br><span class="pre orange">your project</span></span><br>
   </h3>
     <%= simple_form_for [@project, @contact_demand], method: :post, url: project_contact_demands_path(@project) do |f|%>
-      <%= f.input :full_name, placeholder: 'John Doe' %>
-      <%= f.input :email, placeholder: 'john.doe@gmail.com' %>
-      <%= f.input :phone, placeholder: '07111 22222' %>
-      <%= f.input :message, placeholder: 'optional' %>
+      <%= f.input :full_name, placeholder: 'John Doe', label_html: { class: 'form-label' } %>
+      <%= f.input :email, placeholder: 'john.doe@gmail.com', label_html: { class: 'form-label' } %>
+      <%= f.input :phone, placeholder: '07111 22222', label_html: { class: 'form-label' } %>
+      <%= f.input :message, placeholder: 'optional', label_html: { class: 'form-label' } %>
       <div class="text-center">
         <%= f.button :submit, 'Enquire', class: 'form-cta'%>
       </div>
